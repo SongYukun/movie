@@ -1,0 +1,784 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Insert a title</title>
+	<link href="css/forthcoming.css" type="text/css" rel="Stylesheet" />
+	</head>
+	<body>
+		<!-- 头部 -->
+		<header>
+			<!-- 标题导航栏 -->
+			<div id="top">
+				<div class="titleImg">
+					<svg id="logo" width="160" height="70">
+						<g>
+							<text alignment-baseline="before-edge"  dominant-baseline="text-before-edge" font-family="hwhp" font-size="40" fill="url(#g1)" x="15" y="15">
+								电
+							</text>
+							<defs>
+								<linearGradient id="g1" x1="0" y1="0" x2="0" y2="100%">
+									<stop offset="0" stop-color="red"></stop>
+									<stop offset="1" stop-color="blue"></stop>
+								</linearGradient>
+							</defs>
+							<animateTransform id="a1" attributeName="transform" begin="2s;a3.end+1s" dur="3s" type="rotate"
+							                  from="0,35,35" to="360,35,35" repeatCount="1"/>
+						</g>
+						<g>
+							<text alignment-baseline="before-edge"  dominant-baseline="text-before-edge"  font-family="hwhp" font-size="40" fill="url(#g2)" x="60" y="15">
+								影
+							</text>
+							<defs>
+								<linearGradient id="g2" x1="0" y1="0" x2="0" y2="100%">
+									<stop offset="0" stop-color="blue"></stop>
+									<stop offset="1" stop-color="yellow"></stop>
+								</linearGradient>
+							</defs>
+							<animateTransform id="a2" attributeName="transform" begin="a1.end+1s" dur="3s" type="rotate"
+							                  from="0,80,35" to="360 80,35" repeatCount="1"/>
+						</g>
+						<g>
+							<text alignment-baseline="before-edge"  dominant-baseline="text-before-edge" font-family="hwhp" font-size="40" fill="url(#g3)" x="105" y="15">
+								网
+							</text>
+							<defs>
+								<linearGradient id="g3" x1="0" y1="0" x2="0" y2="100%">
+									<stop offset="0" stop-color="yellow"></stop>
+									<stop offset="1" stop-color="red"></stop>
+								</linearGradient>
+							</defs>
+							<animateTransform id="a3" attributeName="transform" begin="a2.end+1s" dur="3s" type="rotate"
+							                  from="0,125,35" to="360 125,35" repeatCount="1"/>
+						</g>
+					</svg>
+				</div>
+				<div class="titleright">
+					<ul id="navCollection">
+						<li id="load"><a class="btnload" href="">请登陆</a>
+							<div class="load">
+								<div class="loadmain">
+									<span class="close">×</span>
+									<h1>用户登陆</h1>
+									<input type="text" placeholder="用户名/手机号"/>
+									<input type="password" placeholder="密码"/>
+									<div class="btn">
+										<button type="button">登陆</button>
+										<p><a href="register.html">没有帐号去注册</a></p>
+									</div>
+									<div class="loadtype">
+										<span>登陆方式</span>
+										<ul>
+											<li id="loadwx"><a href=""><b></b></a></li>
+											<li id="loadwb"><a href=""><b></b></a></li>
+											<li id="loadqq"><a href=""><b></b></a></li>
+											<li id="loadph"><a href=""><b></b></a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li id="register"><a href="register.html">注册</a>
+						</li>
+						<li id="desk"><a href="#"><b></b>放入桌面</a></li>
+						<li id="coll"><a href="#"><b></b>加入收藏</a></li>
+						<li id="message"><a href="#"><b></b>留言/求片</a></li>
+						<li id="blog"><a href="#"><b></b>关注微博</a></li>
+					</ul>
+					<ul id="search">
+						<li><input type="text" placeholder="请输入影片名或演员名"></li>
+						<li class="btn_search"><a href="#">搜索</a></li>
+						<li class="btn_record"><a href="#"><b></b>播放记录</a><div class="playlist"><ul>
+							<li><a href="">暂无播放记录</a></li>
+						</ul></div></li>
+					</ul>
+				</div>
+			</div>
+			<!--导航栏-->
+			<nav id="nav">
+				<ul class="navCatalog">
+					<li><a href="index.html">首页</a></li>
+					<li><a href="information.html">影讯</a></li>
+					<li><a href="forthcoming.html">今日影视</a></li>
+					<li><a href="waterfall.html">热映影视</a></li>
+					<li><a href="rank.html">电影票房</a></li>
+					<li><a href="sort.html">电视剧</a></li>
+					<li><a href="sort.html">电影</a></li>
+					<li><a href="sort.html">微电影</a></li>
+					<li><a href="sort.html">动漫</a></li>
+					<li><a href="sort.html">综艺节目</a></li>
+				</ul>
+			</nav>
+			<!--导航栏下的子栏-->
+			<div id="navitems">
+				<ul class="itemslistlf">
+					<li><a href="sort.html">电视剧：</a></li>
+					<li><a href="sort.html">国产</a></li>
+					<li><a href="sort.html">韩剧</a></li>
+					<li><a href="sort.html">美剧</a></li>
+					<li><a href="sort.html">英剧</a></li>
+					<li><a href="sort.html">港剧</a></li>
+					<li><a href="sort.html">台剧</a></li>
+					<li><a href="sort.html">日剧</a></li>
+					<li><a href="sort.html">泰剧</a></li>
+					<li><a href="sort.html">海外</a></li>
+				</ul>
+				<ul class="itemslistrt">
+					<li><a href="sort.html">电影：</a></li>
+					<li><a href="sort.html">动作片</a></li>
+					<li><a href="sort.html">喜剧片</a></li>
+					<li><a href="sort.html">爱情片</a></li>
+					<li><a href="sort.html">科幻片</a></li>
+					<li><a href="sort.html">恐怖片</a></li>
+					<li><a href="sort.html">战争片</a></li>
+					<li><a href="sort.html">剧情片</a></li>
+				</ul>
+			</div>
+		</header>
+		<!-- 主体 -->
+		<section id="main">
+			<div class="inforbody">
+				<div class="header">
+					<ul>
+						<li><a data-tab="tab1" class="hover" href="#">今日电视</a></li>
+						<li><a data-tab="tab2" href="#">影院热映</a></li>
+					</ul>
+				</div>
+				<div class="body tab1 in">
+					<p class="today"></p>
+					<ul>
+						<li>
+							<div class="bodylf">
+								<b></b>
+								<span class="time">18:04</span>
+								<a href="details.html">
+									<img src="images/forthcoming/jjtv01.jpg"/>
+								</a>
+							</div>
+							<div class="bodyrt">
+								<h4>孤战</h4>
+								<p>主演：姚安濂 苗圃 冯恩鹤 马丽 王雅伦 刘钇彤 史梵希 张桐 陶慧敏</p>
+								<ul>
+									<li><a href=""><img src="images/forthcoming/sh.jpg"/>上海电视台</a><span><b>18:04</b>动作剧场·51集连续剧：孤战（51）</span></li>
+									<li><a href=""><img src="images/forthcoming/sx.jpg"/>陕西卫视</a><span><b>19:33</b>孤战（38）（首播）</span></li>
+									<li><a href=""><img src="images/forthcoming/hlj.gif"/>黑龙江卫视</a><span><b>19:34</b>孤战（49）（首播）</span></li>
+									<li><a href=""><img src="images/forthcoming/hlj.gif"/>黑龙江卫视</a><span><b>20:19</b>孤战（50）（首播）</span></li>
+								</ul>
+							</div>
+						</li>
+						<li>
+							<div class="bodylf">
+								<b></b>
+								<span class="time">19:00</span>
+								<a href="details.html">
+									<img src="images/forthcoming/jjtv02.jpg"/>
+								</a>
+							</div>
+							<div class="bodyrt">
+								<h4>锦绣未央</h4>
+								<p>主演：唐嫣 罗晋 吴建豪 毛晓彤 李心艾 田丽 梁振伦 陈钰琪</p>
+								<ul>
+									<li><a href=""><img src="images/forthcoming/tvb.gif"/>TVB-翡翠台</a><span><b>19:00</b>锦绣未央</span></li>
+								</ul>
+							</div>
+						</li>
+						<li>
+							<div class="bodylf">
+								<b></b>
+								<span class="time">19:00</span>
+								<a href="details.html">
+									<img src="images/forthcoming/jjtv03.jpg"/>
+								</a>
+							</div>
+							<div class="bodyrt">
+								<h4>微微一笑很倾城</h4>
+								<p>主演：杨洋 郑爽 毛晓彤</p>
+								<ul>
+									<li><a href=""><img src="images/forthcoming/tvb.gif"/>TVB-翡翠台</a><span><b>19:00</b>微微一笑很倾城</span></li>
+								</ul>
+							</div>
+						</li>
+						<li>
+							<div class="bodylf">
+								<b></b>
+								<span class="time">19:30</span>
+								<a href="details.html">
+									<img src="images/forthcoming/jjtv04.jpg"/>
+								</a>
+							</div>
+							<div class="bodyrt">
+								<h4>将婚姻进行到底</h4>
+								<p>主演：任重 万茜 苏岩 韩青 王策 谢园 李晓燕 徐敏</p>
+								<ul>
+									<li><a href=""><img src="images/forthcoming/c8.jpg"/>CCTV8电视剧</a><span><b>19:30</b>动作剧场·51集连续剧：孤战（51）</span></li>
+									<li><a href=""><img src="images/forthcoming/c8.jpg"/>CCTV8电视剧</a><span><b>20:29</b>孤战（38）（首播）</span></li>
+									<li><a href=""><img src="images/forthcoming/c8.jpg"/>CCTV8电视剧</a><span><b>21:32</b>孤战（49）（首播）</span></li>
+								</ul>
+							</div>
+						</li>
+						<li>
+							<div class="bodylf">
+								<b></b>
+								<span class="time">19:32</span>
+								<a href="details.html">
+									<img src="images/forthcoming/jjtv05.jpg"/>
+								</a>
+							</div>
+							<div class="bodyrt">
+								<h4>小草青青</h4>
+								<p>主演：王茜华 于震 郭东文 何翯 刘钧 郭虹 戴笑盈</p>
+								<ul>
+									<li><a href=""><img src="images/forthcoming/ah.jpg"/>安徽卫视</a><span><b>19:32</b>小草青青（53）（首播）</span></li>
+									<li><a href=""><img src="images/forthcoming/ah.jpg"/>安徽卫视</a><span><b>20:28</b>小草青青（54）（首播）</span></li>
+								</ul>
+							</div>
+						</li>
+						<li>
+							<div class="bodylf">
+								<b></b>
+								<span class="time">19:33</span>
+								<a href="details.html">
+									<img src="images/forthcoming/jjtv06.jpg"/>
+								</a>
+							</div>
+							<div class="bodyrt">
+								<h4>乱世丽人行</h4>
+								<p>主演：韩雪 付辛博 毛林林 张丹峰 李泽锋 杜志国</p>
+								<ul>
+									<li><a href=""><img src="images/forthcoming/tj.jpg"/>天津卫视</a><span><b>19:33</b>乱世丽人行（49）（首播）</span></li>
+									<li><a href=""><img src="images/forthcoming/jx.jpg"/>江西卫视</a><span><b>19:35</b>乱世丽人行（49）（首播）</span></li>
+									<li><a href=""><img src="images/forthcoming/jx.jpg"/>江西卫视</a><span><b>20:29</b>乱世丽人行（50）（首播）</span></li>
+									<li><a href=""><img src="images/forthcoming/tj.jpg"/>天津卫视</a><span><b>20:29</b>乱世丽人行（50）（首播）</span></li>
+								</ul>
+							</div>
+						</li>
+						<li>
+							<div class="bodylf">
+								<b></b>
+								<span class="time">19:34</span>
+								<a href="details.html">
+									<img src="images/forthcoming/jjtv07.jpg"/>
+								</a>
+							</div>
+							<div class="bodyrt">
+								<h4>遇见爱情的利先生</h4>
+								<p>主演：周冬雨 陈晓 叶青 贾景晖 刘雪华 肖涵 米热 冯大路</p>
+								<ul>
+									<li><a href=""><img src="images/forthcoming/gd.jpg"/>广东卫视</a><span><b>19:34</b>遇见爱情的利先生（首播）</span></li>
+									<li><a href=""><img src="images/forthcoming/gd.jpg"/>广东卫视</a><span><b>20:27</b>遇见爱情的利先生（首播）</span></li>
+								</ul>
+							</div>
+						</li>
+						<li>
+							<div class="bodylf">
+								<b></b>
+								<span class="time">19:34</span>
+								<a href="details.html">
+									<img src="images/forthcoming/jjtv08.jpg"/>
+								</a>
+							</div>
+							<div class="bodyrt">
+								<h4>北上广依然相信爱情</h4>
+								<p>主演：朱亚文 陈妍希 鲍晓 曾泳醍 陈迪 黄超 李依玲 马灿灿 王新 张铎</p>
+								<ul>
+									<li><a href=""><img src="images/forthcoming/sd.gif"/>山东卫视</a><span><b>19:34</b>北上广依然相信爱情（21）</span></li>
+									<li><a href=""><img src="images/forthcoming/sd.gif"/>山东卫视</a><span><b>20:25</b>北上广依然相信爱情（22）</span></li>
+								</ul>
+							</div>
+						</li>
+						<li>
+							<div class="bodylf">
+								<b></b>
+								<span class="time">19:35</span>
+								<a href="details.html">
+									<img src="images/forthcoming/jjtv09.jpg"/>
+								</a>
+							</div>
+							<div class="bodyrt">
+								<h4>守护丽人</h4>
+								<p>主演：李小璐 张译 李智楠 江雪 吴谨言 陈昌旷 李颖 姜震昊 叶思淼 彭玉 孙桂田 吴岱融 章申</p>
+								<ul>
+									<li><a href=""><img src="images/forthcoming/sz.jpg"/>深圳卫视</a><span><b>19:35</b>守护丽人（50）（首播）</span></li>
+									<li><a href=""><img src="images/forthcoming/sz.jpg"/>深圳卫视</a><span><b>20:33</b>守护丽人（51）（首播）</span></li>
+								</ul>
+							</div>
+						</li>
+						<li>
+							<div class="bodylf">
+								<b></b>
+								<span class="time">19:54</span>
+								<a href="details.html">
+									<img src="images/forthcoming/jjtv10.jpg"/>
+								</a>
+							</div>
+							<div class="bodyrt">
+								<h4>孤芳不自赏</h4>
+								<p>主演：钟汉良 杨颖 甘婷婷 孙艺洲 于波 麦迪娜 亓航 邓莎 程皓枫 刘萌萌 魏炳桦</p>
+								<ul>
+									<li><a href=""><img src="images/forthcoming/hn.gif"/>湖南卫视</a><span><b>19:54</b>孤芳不自赏（38）（首播）</span></li>
+									<li><a href=""><img src="images/forthcoming/hn.gif"/>湖南卫视</a><span><b>20:55</b>孤芳不自赏（39）（首播）</span></li>
+								</ul>
+							</div>
+						</li>
+					</ul>
+					<div class="page">
+						<ul>
+							<li><a href="">首页</a></li>
+							<li><a href="">上一页</a></li>
+							<li><a class="hover" href="">1</a></li>
+							<li><a href="">2</a></li>
+							<li><a href="">3</a></li>
+							<li><a href="">4</a></li>
+							<li><a href="">5</a></li>
+							<li><a href="">下一页</a></li>
+							<li><a href="">尾页</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="body tab2">
+					<p class="today"></p>
+					<ul>
+						<li>
+							<div class="bodylf">
+								<b></b>
+								<span class="time">2017-01-28</span>
+								<a href="details.html">
+									<img src="images/forthcoming/jjmu01.jpg"/>
+								</a>
+							</div>
+							<div class="bodyrt">
+								<h4>功夫瑜伽</h4>
+								<ul>
+									<li>主演：成龙 张艺兴 母其弥雅 李治廷 索努·苏德 尚语贤</li>
+									<li>导演：唐季礼</li>
+									<li>类型：动作片<span>地区：大陆</span></li>
+								</ul>
+							</div>
+						</li>
+						<li>
+							<div class="bodylf">
+								<b></b>
+								<span class="time">2017-01-28</span>
+								<a href="details.html">
+									<img src="images/forthcoming/jjmu02.jpg"/>
+								</a>
+							</div>
+							<div class="bodyrt">
+								<h4>大闹天竺</h4>
+								<ul>
+									<li>主演：王宝强 白客 柳岩 岳云鹏</li>
+									<li>导演：王宝强</li>
+									<li>类型：喜剧片<span>地区：大陆</span></li>
+								</ul>
+							</div>
+						</li>
+						<li>
+							<div class="bodylf">
+								<b></b>
+								<span class="time">2017-01-28</span>
+								<a href="details.html">
+									<img src="images/forthcoming/jjmu03.jpg"/>
+								</a>
+							</div>
+							<div class="bodyrt">
+								<h4>西游伏妖篇</h4>
+								<ul>
+									<li>主演：姚晨 吴亦凡 林更新 巴特尔 汪铎 林允 包贝尔</li>
+									<li>导演：徐克</li>
+									<li>类型：剧情片<span>地区：大陆</span></li>
+								</ul>
+							</div>
+						</li>
+						<li>
+							<div class="bodylf">
+								<b></b>
+								<span class="time">2017-01-28</span>
+								<a href="details.html">
+									<img src="images/forthcoming/jjmu04.jpg"/>
+								</a>
+							</div>
+							<div class="bodyrt">
+								<h4>乘风破浪</h4>
+								<ul>
+									<li>主演：邓超 赵丽颖 董子健 高华阳</li>
+									<li>导演：韩寒</li>
+									<li>类型：剧情片<span>地区：大陆</span></li>
+								</ul>
+							</div>
+						</li>
+						<li>
+							<div class="bodylf">
+								<b></b>
+								<span class="time">2017-01-28</span>
+								<a href="details.html">
+									<img src="images/forthcoming/jjmu05.jpg"/>
+								</a>
+							</div>
+							<div class="bodyrt">
+								<h4>熊出没之奇幻空间</h4>
+								<ul>
+									<li>主角：尚雯婕 鲍春来 孙建弘</li>
+									<li>导演：丁亮</li>
+									<li>类型：动漫<span>地区：大陆</span></li>
+								</ul>
+							</div>
+						</li>
+						<li>
+							<div class="bodylf">
+								<b></b>
+								<span class="time">2017-01-20</span>
+								<a href="details.html">
+									<img src="images/forthcoming/jjmu06.jpg"/>
+								</a>
+							</div>
+							<div class="bodyrt">
+								<h4>降临</h4>
+								<ul>
+									<li>主演：艾米·亚当斯 杰瑞米·雷纳 福里斯特·惠特克 迈克尔·斯图巴</li>
+									<li>导演：丹尼斯·维伦纽瓦</li>
+									<li>类型：科幻片<span>地区：美国</span></li>
+								</ul>
+							</div>
+						</li>
+						<li>
+							<div class="bodylf">
+								<b></b>
+								<span class="time">2017-01-20</span>
+								<a href="details.html">
+									<img src="images/forthcoming/jjmu07.jpg"/>
+								</a>
+							</div>
+							<div class="bodyrt">
+								<h4>心惊胆战</h4>
+								<ul>
+									<li>主演：惠英红 陈颖欣 黄德斌 余秋瑶 周广超</li>
+									<li>导演：陈鹏振</li>
+									<li>类型：恐怖片<span>地区：香港</span></li>
+								</ul>
+							</div>
+						</li>
+						<li>
+							<div class="bodylf">
+								<b></b>
+								<span class="time">2017-01-20</span>
+								<a href="details.html">
+									<img src="images/forthcoming/jjmu08.jpg"/>
+								</a>
+							</div>
+							<div class="bodyrt">
+								<h4>大魔法师孟兜兜</h4>
+								<ul>
+									<li>主角：郭太旭 尹冠霖 刘一含</li>
+									<li>导演：孟晖</li>
+									<li>类型：动漫<span>地区：大陆</span></li>
+								</ul>
+							</div>
+						</li>
+						<li>
+							<div class="bodylf">
+								<b></b>
+								<span class="time">2017-01-20</span>
+								<a href="details.html">
+									<img src="images/forthcoming/jjmu09.jpg"/>
+								</a>
+							</div>
+							<div class="bodyrt">
+								<h4>蛋计划</h4>
+								<ul>
+									<li>主角：胡婷 周微 孟雨田 刘莉 李芬 郑莹莹 杨家兴 王征</li>
+									<li>导演：李扬武</li>
+									<li>类型：动漫<span>地区：大陆</span></li>
+								</ul>
+							</div>
+						</li>
+						<li>
+							<div class="bodylf">
+								<b></b>
+								<span class="time">2017-01-13</span>
+								<a href="details.html">
+									<img src="images/forthcoming/jjmu10.jpg"/>
+								</a>
+							</div>
+							<div class="bodyrt">
+								<h4>少年巴比伦</h4>
+								<ul>
+									<li>主演：董子健 李梦 尚铁龙 李大光 唐小然</li>
+									<li>导演：相国强</li>
+									<li>类型：剧情片<span>地区：大陆</span></li>
+								</ul>
+							</div>
+						</li>
+					</ul>
+					<div class="page">
+						<ul>
+							<li><a href="">首页</a></li>
+							<li><a href="">上一页</a></li>
+							<li><a class="hover" href="">1</a></li>
+							<li><a href="">2</a></li>
+							<li><a href="">3</a></li>
+							<li><a href="">4</a></li>
+							<li><a href="">5</a></li>
+							<li><a href="">下一页</a></li>
+							<li><a href="">尾页</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<aside class="inforrt">
+				<div class="hotmouse">
+					<div class="header">
+						<h3>热门影视</h3>
+					</div>
+					<div class="body">
+						<ul>
+							<li>
+								<h4 class="title">娘道</h4>
+								<div class="detail in">
+									<div class="detaillf">
+										<a href="details.html">
+											<img src="images/sort/a_100089604_m_601_m10_180_236.jpg" alt=""></a>
+									</div>
+									<div class="detailrt">
+										<p>
+											<b>主演：</b>
+											<span>岳丽娜/于毅</span></p>
+										<p>
+											<b>类型：</b>
+											<span>年代剧</span></p>
+										<p>
+											<b>上映：</b>
+											<span>2018年</span></p>
+										<p>
+											<b>状态：</b>
+											<span>更新至19集</span></p>
+									</div>
+								</div>
+							</li>
+							<li>
+								<h4 class="title">海贼王</h4>
+								<div class="detail">
+									<div class="detaillf">
+										<a href="details.html">
+											<img src="images/sort/a_100013977_m_601_m10_180_236.jpg" alt=""></a>
+									</div>
+									<div class="detailrt">
+										<p>
+											<b>作者：</b>
+											<span>尾田荣一郎</span></p>
+										<p>
+											<b>类型：</b>
+											<span>少年漫画</span></p>
+										<p>
+											<b>上映：</b>
+											<span>1999年10月20日</span></p>
+										<p>
+											<b>状态：</b>
+											<span>更新至852集</span></p>
+									</div>
+								</div>
+							</li>
+							<li>
+								<h4 class="title">桃花依旧笑春风</h4>
+								<div class="detail">
+									<div class="detaillf">
+										<a href="details.html">
+											<img src="images/sort/a_100162358_m_601_m6_180_236.jpg" alt=""></a>
+									</div>
+									<div class="detailrt">
+										<p>
+											<b>主演：</b>
+											<span>苗圃/陈龙</span></p>
+										<p>
+											<b>类型：</b>
+											<span>剧情</span></p>
+										<p>
+											<b>上映：</b>
+											<span>2018年</span></p>
+										<p>
+											<b>状态：</b>
+											<span>更新至28集</span></p>
+									</div>
+								</div>
+							</li>
+							<li>
+								<h4 class="title">胜利之路</h4>
+								<div class="detail">
+									<div class="detaillf">
+										<a href="details.html">
+											<img src="images/sort/a_100084306_m_601_m8_180_236.jpg" alt=""></a>
+									</div>
+									<div class="detailrt">
+										<p>
+											<b>主演：</b>
+											<span>郭京飞/郭珍霓</span></p>
+										<p>
+											<b>类型：</b>
+											<span>战争</span></p>
+										<p>
+											<b>上映：</b>
+											<span>2018年</span></p>
+										<p>
+											<b>状态：</b>
+											<span>共38集全</span></p>
+									</div>
+								</div>
+							</li>
+							<li>
+								<h4 class="title">上海风云</h4>
+								<div class="detail">
+									<div class="detaillf">
+										<a href="details.html">
+											<img src="images/sort/a_100118139_m_601_m3_180_236.jpg" alt=""></a>
+									</div>
+									<div class="detailrt">
+										<p>
+											<b>主演：</b>
+											<span>寇世勋/程前</span></p>
+										<p>
+											<b>类型：</b>
+											<span>谍战剧</span></p>
+										<p>
+											<b>上映：</b>
+											<span>2018年</span></p>
+										<p>
+											<b>状态：</b>
+											<span>更新至20集</span></p>
+									</div>
+								</div>
+							</li>
+							<li>
+								<h4 class="title">向往的生活第2季</h4>
+								<div class="detail">
+									<div class="detaillf">
+										<a href="details.html">
+											<img src="images/sort/a_100109335_m_601_m18_180_236.jpg" alt=""></a>
+									</div>
+									<div class="detailrt">
+										<p>
+											<b>主演：</b>
+											<span>何炅/黄磊/刘宪华</span></p>
+										<p>
+											<b>类型：</b>
+											<span>综艺节目</span></p>
+										<p>
+											<b>上映：</b>
+											<span>2018年</span></p>
+										<p>
+											<b>状态：</b>
+											<span>更新至2018-07-06期</span></p>
+									</div>
+								</div>
+							</li>
+							<li>
+								<h4 class="title">我不是差等生</h4>
+								<div class="detail">
+									<div class="detaillf">
+										<a href="details.html">
+											<img src="images/sort/a_100121087_m_601_m3_180_236.jpg" alt=""></a>
+									</div>
+									<div class="detailrt">
+										<p>
+											<b>主演：</b>
+											<span>冯宪珍/杨丽晓</span></p>
+										<p>
+											<b>类型：</b>
+											<span>剧情</span></p>
+										<p>
+											<b>上映：</b>
+											<span>2004年</span></p>
+										<p>
+											<b>状态：</b>
+											<span>完结</span></p>
+									</div>
+								</div>
+							</li>
+							<li>
+								<h4 class="title">中国好声音</h4>
+								<div class="detail">
+									<div class="detaillf">
+										<a href="details.html">
+											<img src="images/sort/a_100118592_m_601_m18_180_236.jpg" alt=""></a>
+									</div>
+									<div class="detailrt">
+										<p>
+											<b>主演：</b>
+											<span>李建/周杰伦</span></p>
+										<p>
+											<b>类型：</b>
+											<span>综艺节目</span></p>
+										<p>
+											<b>上映：</b>
+											<span>2018年</span></p>
+										<p>
+											<b>状态：</b>
+											<span>更新至2018-09-14期</span></p>
+									</div>
+								</div>
+							</li>
+							<li>
+								<h4 class="title">生于70年代</h4>
+								<div class="detail">
+									<div class="detaillf">
+										<a href="details.html">
+											<img src="images/sort/a_100088765_m_601_m5_180_236.jpg" alt=""></a>
+									</div>
+									<div class="detailrt">
+										<p>
+											<b>主演：</b>
+											<span>姚笛/李佳航</span></p>
+										<p>
+											<b>类型：</b>
+											<span>都市</span></p>
+										<p>
+											<b>上映：</b>
+											<span>2018年</span></p>
+										<p>
+											<b>状态：</b>
+											<span>更新至2集</span></p>
+									</div>
+								</div>
+							</li>
+							<li>
+								<h4 class="title">青色花开终有时</h4>
+								<div class="detail">
+									<div class="detaillf">
+										<a href="details.html">
+											<img src="images/sort/a_100183608_m_601_m3_180_236.jpg" alt=""></a>
+									</div>
+									<div class="detailrt">
+										<p>
+											<b>主演：</b>
+											<span>张鑫/张灵儿</span></p>
+										<p>
+											<b>类型：</b>
+											<span>言情剧</span></p>
+										<p>
+											<b>上映：</b>
+											<span>2018年</span></p>
+										<p>
+											<b>状态：</b>
+											<span>更新至12集</span></p>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</aside>
+		</section>
+		<!--底部-->
+		<footer	id="foot">
+			<p><a href="#">关于我</a>|<a href="#">联系我</a>|<a href="#">商家入驻</a>|<a href="#">友情链接</a></p>
+			<p>互联网出版许可证编号新出网证(京)字000号|出版物经营许可证|网络文化经营许可证京网文[2018]0000-000号|违法和不良信息举报电话：123456789</p>
+			<p>Copyright © 2018  我的电影网 版权所有|消费者维权热线：12345</p>
+		</footer>
+	<script src="js/vue.js"></script>
+	<script src="js/jquery-1.11.3.js"></script>
+	<script src="js/forthcoming.js"></script>
+	</body>
+</html>
+
+
+
+
+

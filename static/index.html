@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Insert a title</title>
+	<link href="css/index.css" type="text/css" rel="Stylesheet" />
+	</head>
+	<body>
+		<header>
+			<!-- 标题导航栏 -->
+			<div id="top">
+				<div class="titleImg">
+					<svg id="logo" width="160" height="70">
+						<g>
+							<text alignment-baseline="before-edge" dominant-baseline="text-before-edge" font-family="hwhp" font-size="40" fill="url(#g1)" x="15" y="15">
+								电
+							</text>
+							<defs>
+								<linearGradient id="g1" x1="0" y1="0" x2="0" y2="100%">
+									<stop offset="0" stop-color="red"></stop>
+									<stop offset="1" stop-color="blue"></stop>
+								</linearGradient>
+							</defs>
+							<animateTransform id="a1" attributeName="transform" begin="2s;a3.end+1s" dur="3s" type="rotate"
+							                  from="0,35,35" to="360,35,35" repeatCount="1"/>
+						</g>
+						<g>
+							<text alignment-baseline="before-edge" dominant-baseline="text-before-edge" font-family="hwhp" font-size="40" fill="url(#g2)" x="60" y="15">
+								影
+							</text>
+							<defs>
+								<linearGradient id="g2" x1="0" y1="0" x2="0" y2="100%">
+									<stop offset="0" stop-color="blue"></stop>
+									<stop offset="1" stop-color="yellow"></stop>
+								</linearGradient>
+							</defs>
+							<animateTransform id="a2" attributeName="transform" begin="a1.end+1s" dur="3s" type="rotate"
+							                  from="0,80,35" to="360 80,35" repeatCount="1"/>
+						</g>
+						<g>
+							<text alignment-baseline="before-edge" dominant-baseline="text-before-edge" font-family="hwhp" font-size="40" fill="url(#g3)" x="105" y="15">
+								网
+							</text>
+							<defs>
+								<linearGradient id="g3" x1="0" y1="0" x2="0" y2="100%">
+									<stop offset="0" stop-color="yellow"></stop>
+									<stop offset="1" stop-color="red"></stop>
+								</linearGradient>
+							</defs>
+							<animateTransform id="a3" attributeName="transform" begin="a2.end+1s" dur="3s" type="rotate"
+							                  from="0,125,35" to="360 125,35" repeatCount="1"/>
+						</g>
+					</svg>
+				</div>
+				<div class="titleright">
+					<ul id="navCollection">
+						<li id="load"><a class="btnload" href="">请登陆</a>
+							<div class="load">
+								<div class="loadmain">
+									<span class="close">×</span>
+									<h1>用户登陆</h1>
+									<input type="text" placeholder="用户名/手机号"/>
+									<input type="password" placeholder="密码"/>
+									<div class="btn">
+										<button type="button">登陆</button>
+										<p><a href="register.html">没有帐号去注册</a></p>
+									</div>
+									<div class="loadtype">
+										<span>登陆方式</span>
+										<ul>
+											<li id="loadwx"><a href=""><b></b></a></li>
+											<li id="loadwb"><a href=""><b></b></a></li>
+											<li id="loadqq"><a href=""><b></b></a></li>
+											<li id="loadph"><a href=""><b></b></a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li id="register"><a href="register.html">注册</a>
+						</li>
+						<li id="desk"><a href="#"><b></b>放入桌面</a></li>
+						<li id="coll"><a href="#"><b></b>加入收藏</a></li>
+						<li id="message"><a href="#"><b></b>留言/求片</a></li>
+						<li id="blog"><a href="#"><b></b>关注微博</a></li>
+					</ul>
+					<ul id="search">
+						<li><input type="text" placeholder="请输入影片名或演员名"></li>
+						<li class="btn_search"><a href="#">搜索</a></li>
+						<li class="btn_record"><a href="#"><b></b>播放记录</a><div class="playlist"><ul>
+							<li><a href="">暂无播放记录</a></li>
+						</ul></div></li>
+					</ul>
+				</div>
+			</div>
+			<!--导航栏-->
+			<nav id="nav">
+				<ul class="navCatalog">
+					<li><a href="index.html">首页</a></li>
+					<li><a href="information.html">影讯</a></li>
+					<li><a href="forthcoming.html">今日影视</a></li>
+					<li><a href="waterfall.html">热映影视</a></li>
+					<li><a href="rank.html">电影票房</a></li>
+					<li><a href="sort.html">电视剧</a></li>
+					<li><a href="sort.html">电影</a></li>
+					<li><a href="sort.html">微电影</a></li>
+					<li><a href="sort.html">动漫</a></li>
+					<li><a href="sort.html">综艺节目</a></li>
+				</ul>
+			</nav>
+			<!--导航栏下的子栏-->
+			<div id="navitems">
+				<ul class="itemslistlf">
+					<li><a href="sort.html">电视剧：</a></li>
+					<li><a href="sort.html">国产</a></li>
+					<li><a href="sort.html">韩剧</a></li>
+					<li><a href="sort.html">美剧</a></li>
+					<li><a href="sort.html">英剧</a></li>
+					<li><a href="sort.html">港剧</a></li>
+					<li><a href="sort.html">台剧</a></li>
+					<li><a href="sort.html">日剧</a></li>
+					<li><a href="sort.html">泰剧</a></li>
+					<li><a href="sort.html">海外</a></li>
+				</ul>
+				<ul class="itemslistrt">
+					<li><a href="sort.html">电影：</a></li>
+					<li><a href="sort.html">动作片</a></li>
+					<li><a href="sort.html">喜剧片</a></li>
+					<li><a href="sort.html">爱情片</a></li>
+					<li><a href="sort.html">科幻片</a></li>
+					<li><a href="sort.html">恐怖片</a></li>
+					<li><a href="sort.html">战争片</a></li>
+					<li><a href="sort.html">剧情片</a></li>
+				</ul>
+			</div>
+		</header>
+		<!--  广告栏-->
+		<div id="advert">
+			<!--轮播-->
+			<div class="advertimg">
+				<ul class="imgtable">
+				</ul>
+				<ul class="imgtablesize">
+				</ul>
+			</div>
+			<div class="advertlist">
+				<ul class="advertlistmain">
+				</ul>
+			</div>
+		</div>
+		<!-- 热播影视 -->
+		<section id="hotmouse">
+			<div class="header">
+				<h3>热播影视</h3>
+			</div>
+			<div class="hotmain">
+			</div>
+		</section>
+		<!-- 电视节目 -->
+		<section id="tvprogram">
+			<div class="header">
+				<h3>电视节目表</h3><span class="today"></span>
+				<a href=""><p>更多&gt;&gt;</p></a>
+			</div>
+			<div class="tvmain">
+			</div>
+		</section>
+		<!-- 电视剧 -->
+		<section id="tvplay">
+			<div class="tvplaylf">
+				<div class="header">
+					<h3><a href="#">电视剧</a></h3>
+					<ul>
+						<li><a data-tab="tab1" class="hover" href="#">推荐</a></li>
+						<li><a data-tab="tab2" href="#">电视台热播</a></li>
+						<li><a data-tab="tab3" href="#">即将播出</a></li>
+						<li><a data-tab="tab4" href="#">新入库</a></li>
+					</ul>
+					<p><a href="#">更多&gt;&gt;</a></p>
+				</div>
+				<!--推荐分类-->
+				<div class="tvplaybody tab1 in">
+					<ul>
+					</ul>
+				</div>
+				<!--热播分类-->
+				<div class="tvplaybody tab2">
+					<ul>
+					</ul>
+				</div>
+				<!--即播分类-->
+				<div class="tvplaybody tab3">
+					<ul>
+					</ul>
+				</div>
+				<!--新入库分类-->
+				<div class="tvplaybody tab4">
+					<ul>
+					</ul>
+				</div>
+			</div>
+			<div class="tvplayrt">
+				<div class="header">
+					<h3>电视剧排行榜</h3>
+					<span><a href="#">更多&gt;&gt;</a></span>
+				</div>
+				<div class="body">
+					<ul>
+					</ul>
+				</div>
+			</div>
+		</section>
+		<!--电影-->
+		<section id="mouse">
+			<div class="mouself">
+				<div class="header">
+					<h3><a href="#">电影</a></h3>
+					<ul>
+						<li><a data-tab="tab1" class="hover" href="#">推荐</a></li>
+						<li><a data-tab="tab2" href="#">电影院热播</a></li>
+						<li><a data-tab="tab3" href="#">即将上映</a></li>
+						<li><a data-tab="tab4" href="#">新入库</a></li>
+					</ul>
+					<p><a href="#">更多&gt;&gt;</a></p>
+				</div>
+				<!--推荐分类-->
+				<div class="mousebody tab1 in">
+					<ul>
+					</ul>
+				</div>
+				<!--热播分类-->
+				<div class="mousebody tab2">
+					<ul>
+					</ul>
+				</div>
+				<!--即播分类-->
+				<div class="mousebody tab3">
+					<ul>
+					</ul>
+				</div>
+				<!--新入库分类-->
+				<div class="mousebody tab4">
+					<ul>
+					</ul>
+				</div>
+			</div>
+			<div class="mousert">
+				<div class="header">
+					<h3>电影排行榜</h3>
+					<span><a href="#">更多&gt;&gt;</a></span>
+				</div>
+				<div class="body">
+					<ul>
+					</ul>
+				</div>
+			</div>
+		</section>
+		<!-- 动漫卡通 -->
+		<section id="manga">
+			<div class="mangalf">
+				<div class="header">
+					<h3><a href="#">动漫卡通</a></h3>
+					<ul>
+						<li><a data-tab="tab1" class="hover" href="#">推荐</a></li>
+						<li><a data-tab="tab2" href="#">新入库</a></li>
+					</ul>
+					<p><a href="#">更多&gt;&gt;</a></p>
+				</div>
+				<!--推荐分类-->
+				<div class="mangabody tab1 in">
+					<ul>
+					</ul>
+				</div>
+				<!--新入库分类-->
+				<div class="mangabody  tab2">
+					<ul>
+					</ul>
+				</div>
+			</div>
+			<div class="mangart">
+				<div class="header">
+					<h3>动漫排行榜</h3>
+					<span><a href="#">更多&gt;&gt;</a></span>
+				</div>
+				<div class="body">
+					<ul>
+					</ul>
+				</div>
+			</div>
+		</section>
+		<!--综艺娱乐-->
+		<section id="variety">
+			<div class="varietylf">
+				<div class="header">
+					<h3><a href="#">综艺娱乐</a></h3>
+					<ul>
+						<li><a data-tab="tab1" class="hover" href="#">推荐</a></li>
+						<li><a data-tab="tab2" href="#">今日热播</a></li>
+						<li><a data-tab="tab3" href="#">新入库</a></li>
+					</ul>
+					<p><a href="#">更多&gt;&gt;</a></p>
+				</div>
+				<!--推荐分类-->
+				<div class="varietybody tab1 in">
+					<ul>
+					</ul>
+				</div>
+				<!--热播分类-->
+				<div class="varietybody  tab2">
+					<ul>
+					</ul>
+				</div>
+				<!--新入库分类-->
+				<div class="varietybody tab3">
+					<ul>
+					</ul>
+				</div>
+			</div>
+			<div class="varietyrt">
+				<div class="header">
+					<h3>综艺排行榜</h3>
+					<span><a href="#">更多&gt;&gt;</a></span>
+				</div>
+				<div class="body">
+					<ul>
+					</ul>
+				</div>
+			</div>
+		</section>
+		<!--楼层-->
+		<nav id="navbar">
+			<ul>
+				<li>
+					<a href="#">电视剧</a>
+				</li>
+				<li>
+					<a href="#">电影</a>
+				</li>
+				<li>
+					<a href="#">动漫卡通</a>
+				</li>
+				<li>
+					<a href="#">综艺娱乐</a>
+				</li>
+			</ul>
+		</nav>
+		<!--最新图片-->
+		<section id="pic">
+			<div class="header">
+				<h3><a href="#">最新图片</a></h3>
+				<ul>
+					<li><a data-tab="tab1" class="hover" href="#">海报</a></li>
+					<li><a data-tab="tab2" href="#">剧照</a></li>
+				</ul>
+				<p><a href="#">更多&gt;&gt;</a></p>
+			</div>
+			<!--海报分类-->
+			<div class="picbody tab1 in">
+				<ul>
+				</ul>
+			</div>
+			<!--剧照分类-->
+			<div class="picbody tab2">
+				<ul>
+				</ul>
+			</div>
+		</section>
+		<!--底部-->
+		<footer	id="foot">
+			<p><a href="#">关于我</a>|<a href="#">联系我</a>|<a href="#">商家入驻</a>|<a href="#">友情链接</a></p>
+			<p>互联网出版许可证编号新出网证(京)字000号|出版物经营许可证|网络文化经营许可证京网文[2018]0000-000号|违法和不良信息举报电话：123456789</p>
+			<p>Copyright © 2018  我的电影网 版权所有|消费者维权热线：12345</p>
+		</footer>
+	<script src="js/vue.js"></script>
+	<script src="js/jquery-1.11.3.js"></script>
+	<script src="js/ajax.js"></script>
+	<script src="js/index.js"></script>
+	</body>
+</html>

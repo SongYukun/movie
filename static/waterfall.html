@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Insert a title</title>
+	<link href="css/waterfall.css" type="text/css" rel="Stylesheet" />
+	</head>
+	<body>
+		<!-- 头部 -->
+		<header>
+			<!-- 标题导航栏 -->
+			<div id="top">
+				<div class="titleImg">
+					<svg id="logo" width="160" height="70">
+						<g>
+							<text alignment-baseline="before-edge" dominant-baseline="text-before-edge" font-family="hwhp" font-size="40" fill="url(#g1)" x="15" y="15">
+								电
+							</text>
+							<defs>
+								<linearGradient id="g1" x1="0" y1="0" x2="0" y2="100%">
+									<stop offset="0" stop-color="red"></stop>
+									<stop offset="1" stop-color="blue"></stop>
+								</linearGradient>
+							</defs>
+							<animateTransform id="a1" attributeName="transform" begin="2s;a3.end+1s" dur="3s" type="rotate"
+							                  from="0,35,35" to="360,35,35" repeatCount="1"/>
+						</g>
+						<g>
+							<text alignment-baseline="before-edge" dominant-baseline="text-before-edge" font-family="hwhp" font-size="40" fill="url(#g2)" x="60" y="15">
+								影
+							</text>
+							<defs>
+								<linearGradient id="g2" x1="0" y1="0" x2="0" y2="100%">
+									<stop offset="0" stop-color="blue"></stop>
+									<stop offset="1" stop-color="yellow"></stop>
+								</linearGradient>
+							</defs>
+							<animateTransform id="a2" attributeName="transform" begin="a1.end+1s" dur="3s" type="rotate"
+							                  from="0,80,35" to="360 80,35" repeatCount="1"/>
+						</g>
+						<g>
+							<text alignment-baseline="before-edge" dominant-baseline="text-before-edge" font-family="hwhp" font-size="40" fill="url(#g3)" x="105" y="15">
+								网
+							</text>
+							<defs>
+								<linearGradient id="g3" x1="0" y1="0" x2="0" y2="100%">
+									<stop offset="0" stop-color="yellow"></stop>
+									<stop offset="1" stop-color="red"></stop>
+								</linearGradient>
+							</defs>
+							<animateTransform id="a3" attributeName="transform" begin="a2.end+1s" dur="3s" type="rotate"
+							                  from="0,125,35" to="360 125,35" repeatCount="1"/>
+						</g>
+					</svg>
+				</div>
+				<div class="titleright">
+					<ul id="navCollection">
+						<li id="load"><a class="btnload" href="">请登陆</a>
+							<div class="load">
+								<div class="loadmain">
+									<span class="close">×</span>
+									<h1>用户登陆</h1>
+									<input type="text" placeholder="用户名/手机号"/>
+									<input type="password" placeholder="密码"/>
+									<div class="btn">
+										<button type="button">登陆</button>
+										<p><a href="register.html">没有帐号去注册</a></p>
+									</div>
+									<div class="loadtype">
+										<span>登陆方式</span>
+										<ul>
+											<li id="loadwx"><a href=""><b></b></a></li>
+											<li id="loadwb"><a href=""><b></b></a></li>
+											<li id="loadqq"><a href=""><b></b></a></li>
+											<li id="loadph"><a href=""><b></b></a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li id="register"><a href="register.html">注册</a>
+						</li>
+						<li id="desk"><a href="#"><b></b>放入桌面</a></li>
+						<li id="coll"><a href="#"><b></b>加入收藏</a></li>
+						<li id="message"><a href="#"><b></b>留言/求片</a></li>
+						<li id="blog"><a href="#"><b></b>关注微博</a></li>
+					</ul>
+					<ul id="search">
+						<li><input type="text" placeholder="请输入影片名或演员名"></li>
+						<li class="btn_search"><a href="#">搜索</a></li>
+						<li class="btn_record"><a href="#"><b></b>播放记录</a><div class="playlist"><ul>
+							<li><a href="">暂无播放记录</a></li>
+						</ul></div></li>
+					</ul>
+				</div>
+			</div>
+			<!--导航栏-->
+			<nav id="nav">
+				<ul class="navCatalog">
+					<li><a href="index.html">首页</a></li>
+					<li><a href="information.html">影讯</a></li>
+					<li><a href="forthcoming.html">今日影视</a></li>
+					<li><a href="waterfall.html">热映影视</a></li>
+					<li><a href="rank.html">电影票房</a></li>
+					<li><a href="sort.html">电视剧</a></li>
+					<li><a href="sort.html">电影</a></li>
+					<li><a href="sort.html">微电影</a></li>
+					<li><a href="sort.html">动漫</a></li>
+					<li><a href="sort.html">综艺节目</a></li>
+				</ul>
+			</nav>
+			<!--导航栏下的子栏-->
+			<div id="navitems">
+				<ul class="itemslistlf">
+					<li><a href="sort.html">电视剧：</a></li>
+					<li><a href="sort.html">国产</a></li>
+					<li><a href="sort.html">韩剧</a></li>
+					<li><a href="sort.html">美剧</a></li>
+					<li><a href="sort.html">英剧</a></li>
+					<li><a href="sort.html">港剧</a></li>
+					<li><a href="sort.html">台剧</a></li>
+					<li><a href="sort.html">日剧</a></li>
+					<li><a href="sort.html">泰剧</a></li>
+					<li><a href="sort.html">海外</a></li>
+				</ul>
+				<ul class="itemslistrt">
+					<li><a href="sort.html">电影：</a></li>
+					<li><a href="sort.html">动作片</a></li>
+					<li><a href="sort.html">喜剧片</a></li>
+					<li><a href="sort.html">爱情片</a></li>
+					<li><a href="sort.html">科幻片</a></li>
+					<li><a href="sort.html">恐怖片</a></li>
+					<li><a href="sort.html">战争片</a></li>
+					<li><a href="sort.html">剧情片</a></li>
+				</ul>
+			</div>
+		</header>
+		<!-- 主体 -->
+		<section id="main">
+			<div class="waterfall">
+				<div>
+					<a href="details.html">
+						<img src="images/hotmou/hot01.jpg"/>
+						<p>简介：1943年，一份我党潜伏汪伪和军统的人员名单因负责人的被捕，被锁在上海银行保险箱。共产党员陈晓奉命利用指纹术制作指纹套以取出名单。行动失败，保险箱钥匙被汪伪特工部得到，联系人宋姐在牺牲前要陈晓务必拿到名单。</p>
+					</a>
+				</div>
+				<div>
+					<a href="details.html">
+						<img src="images/hotmou/hot02.jpg"/>
+						<p>简介：抗战时期的上海，进步女青年韩疏影被婶婶陷害，被迫嫁给苏北大亨谢丙炎做妾室。在爱国教师历文轩的感召下，韩疏影决定逃婚投入救国行列，却因和谢家大少爷谢天赐的同学关系，被谢家大小姐谢若雪发现。</p>
+					</a>
+				</div>
+				<div>
+					<a href="details.html">
+						<img src="images/hotmou/hot03.jpg"/>
+						<p>简介：幼年时，林佳因家中变故被父亲林世渊独自一人含辛茹苦带大。林佳长大后格外任性，做事不计后果。林世渊意识到女儿的问题，为挽救女儿，将其赶出家门，让她从基层职工做起，接受社会锻炼与改造。失去富裕生活的林佳负气出走、流落街头，被北京胡同里土生土长的快递员陈曦所救。</p>
+					</a>
+				</div>
+				<div>
+					<a href="details.html">
+						<img src="images/hotmou/hot04.jpg"/>
+						<p>简介：1937年，上海沦陷，出身外交世家的普济州因不满与姚素珍指腹为婚，在其婚礼上，竟然当场逃婚，辗转至中国驻奥地利维也纳领事馆任职，并与其偶像女小提琴家海伦雨中邂逅。</p>
+					</a>
+				</div>
+				<div>
+					<a href="details.html">
+						<img src="images/hotmou/hot05.jpg"/>
+						<p>简介：刘欣桐，一个成长在贫民之家的的女孩，可是却始终不改阳光坚强的本性。她的生活原本平淡无奇，然而一次意外，她进入了一个截然不同的生活圈子，和母亲迫不得已搬进了富商纪百均的家里。自此，刘欣桐的生活发生了翻天覆地的变化。</p>
+					</a>
+				</div>
+				<div>
+					<a href="details.html">
+						<img src="images/hotmou/hot07.jpg"/>
+						<p>简介：晋、燕、凉、秦四国征战不休，晋国国力最强，晋国国王亲弟镇北王楚北捷（钟汉良饰）英勇善战、武功谋略过人，令其他三国闻风丧胆。晋燕交战之际，燕国敬安王府遭到围陷，一夜之间王府覆灭。</p>
+					</a>
+				</div>
+				<div>
+					<a href="details.html">
+						<img src="images/hotmou/hot10.jpg"/>
+						<p>简介：从小生活完美的公主李慧珍因家道中落沦为“龙套女”，成了初入职场处处碰壁的菜鸟。而小时候的“矮胖挫”白皓宇却变身高富帅海归。</p>
+					</a>
+				</div>
+
+				<div>
+					<a href="details.html">
+						<img src="images/hotmou/tv01.jpg"/>
+						<p>简介： 一次意外溺水，长时间脑部缺氧让著名服装设计师厉薇薇失去了部分记忆，她的记忆停留在23岁。记忆中热恋的同为设计师的男友竟成了竞争对手，而一个陌生人却成了她的未婚夫。厉薇薇不相信自己会和前男友陈亦度分手，她努力调查前因。未婚夫霍骁为了保护薇薇，追回自己的未婚妻，千方百计阻挠薇薇调查，守在她周围。</p>
+					</a>
+				</div>
+				<div>
+					<a href="details.html">
+						<img src="images/hotmou/tv02.jpg"/>
+						<p>简介： 该剧讲述了宋朝时期拥有皇家血统的玉蝶流落民间，后跟着五嫂在民间长大，并得五嫂祖传御厨技艺，长大后宋玉蝶成为闻名江南的名厨，与嫉恶如仇的五嫂义子李马相恋，因为战争的原因始终不能跟李马长相厮守，后为了避免金兵攻打宋朝，牺牲个人的感情来挽救国家命运和民族的故事。</p>
+					</a>
+				</div>
+				<div>
+					<a href="details.html">
+						<img src="images/hotmou/tv03.jpg"/>
+						<p>简介：身为三姐妹之长的白芍，在受老爸白守城管束三十年之后，终于迎来了把老爸“嫁“出去的好日子，然而白父却因对三个女儿不放心，不愿意与老伴儿张姨出国定居。为让老爸放心出国，以便自己获得自由，白芍与不打不相识的混血大男孩陆六安开始了假扮情侣的戏码。</p>
+					</a>
+				</div>
+				<div>
+					<a href="details.html">
+						<img src="images/hotmou/tv04.jpg"/>
+						<p>简介：该剧讲述派出所丁所长退休后，儿女的婚姻大事问题一直令他忧心的故事。</p>
+					</a>
+				</div>
+				<div>
+					<a href="details.html">
+						<img src="images/hotmou/tv05.jpg"/>
+						<p>简介：平凡少年莫明自幼失去父亲，被母亲艰难抚养长大，他总是希望用自己的方式去守护自己在乎的人。一次意外，莫明不幸被卷入了天工会与九卿两大御灵师集团之间的斗争，并发现了“器灵”这一存在——他怎么也想不到，那些貌似古董的武器，竟然能幻化成美丽的女孩，还能够进行战斗。</p>
+					</a>
+				</div>
+				<div>
+					<a href="details.html">
+						<img src="images/hotmou/tv06.jpg"/>
+						<p>简介：王茂与黄依然在洛芙婚庆公司是上下级关系，两人从相识的那一刻起就充满矛盾，由于两人的文化差异，使彼此都不能理解。</p>
+					</a>
+				</div>
+				<div>
+					<a href="details.html">
+						<img src="images/hotmou/tv07.jpg"/>
+						<p>简介： 住北京的郑妈妈有三个闺女三个女婿，由于郑妈妈教女有方，一大家子日子过得其乐融融无比蜜甜。可突如其来的一段录音却让郑妈妈怀疑已去世的老伴曾经藏有私房钱。为防止女儿们的家庭不稳，郑妈妈郑重其事地嘱咐三个女儿要想把自己的老公看住，必须从私房钱查起。</p>
+					</a>
+				</div>
+
+				<div>
+					<a href="details.html">
+						<img src="images/hotmou/tv09.jpg"/>
+						<p>简介：胡八一、Shirley杨与王胖子一起历经万险来到了塔克拉玛干沙漠中的精绝古城遗址寻找“鬼洞”的故事。 胡八一上山下乡来到中蒙边境的岗岗营子，带上了家中仅存的一本书——《十六字阴阳风水秘术》，闲来无事将书中文字背得滚瓜烂熟。之后参军到西藏，遇上雪崩掉落一条巨大的地沟当中，胡八一利用自己懂得的墓葬秘术逃得不死。</p>
+					</a>
+				</div>
+				<div>
+					<a href="details.html">
+						<img src="images/hotmou/tv10.jpg"/>
+						<p>简介：林三因意外被迫以低级家丁身份进入萧府大宅，遭逢无数奇遇，帮助萧府在商场、官场翻云覆雨，齐家治国平天下，成为“天下第一丁”的故事。</p>
+					</a>
+				</div>
+				<div>
+					<a href="details.html">
+						<img src="images/hotmou/mouse01.jpg"/>
+						<p>简介： 战国时期，七雄争霸。齐将田忌之女田夕率兵与魏军交战，原以为胜券在握，不料却被半路杀出的孙膑用匪夷所思的计谋打败，手下伤亡惨重。田夕满怀悲愤力擒孙膑，原本想杀了他为齐国将士报仇，谁知求贤若渴的齐王却下令赦免闯下大祸的孙膑。</p>
+					</a>
+				</div>
+				<div>
+					<a href="details.html">
+						<img src="images/hotmou/mouse02.jpg"/>
+						<p>简介： 道姆·柯布与同事阿瑟和纳什在一次针对日本能源大亨齐藤的盗梦行动中失败，反被齐藤利用。齐藤威逼利诱因遭通缉而流亡海外的柯布帮他拆分他竞争对手的公司，采取极端措施在其唯一继承人罗伯特·费希尔的深层潜意识中种下放弃家族公司、自立门户的想法。</p>
+					</a>
+				</div>
+				<div>
+					<a href="details.html">
+						<img src="images/hotmou/mouse03.jpg"/>
+						<p>简介： 影片讲述的故事发生在虚拟的未来世界，那时的英国变成了一个由萨特勒所统治的法西斯极权主义国家，人民生活方在残暴的统治下，疾病、饥荒、灰暗，且秘密警察无处不在。</p>
+					</a>
+				</div>
+				<div>
+					<a href="details.html">
+						<img src="images/hotmou/mouse04.jpg"/>
+						<p>简介： “13 岁”奏响了青春序曲的第一个音符。七月与安生从踏入中学校门的一刻起，便宿命般地成为了朋友。她们一个恬静如水，一个张扬似火，性格截然不同、却又互相吸引。</p>
+					</a>
+				</div>
+				<div>
+					<a href="details.html">
+						<img src="images/hotmou/mouse05.jpg"/>
+						<p>简介：菜鸟警察尼克，第一次执行任务就一命归西。死去的尼克匪夷所思地飘到了一个叫“冥界警局”的部门。</p>
+					</a>
+				</div>
+			</div>
+		</section>
+		<!--底部-->
+		<footer	id="foot">
+			<p><a href="#">关于我</a>|<a href="#">联系我</a>|<a href="#">商家入驻</a>|<a href="#">友情链接</a></p>
+			<p>互联网出版许可证编号新出网证(京)字000号|出版物经营许可证|网络文化经营许可证京网文[2018]0000-000号|违法和不良信息举报电话：123456789</p>
+			<p>Copyright © 2018  我的电影网 版权所有|消费者维权热线：12345</p>
+		</footer>
+		<script src="js/vue.js"></script>
+		<script src="js/ajax.js"></script>
+		<script src="js/jquery-1.11.3.js"></script>
+		<script src="js/fusioncharts.js"></script>
+		<script src="js/fusioncharts.charts.js"></script>
+		<script src="js/waterfall.js"></script>
+	</body>
+</html>
+
+
+
+
+

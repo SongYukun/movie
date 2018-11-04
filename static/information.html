@@ -1,0 +1,795 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Insert a title</title>
+	<link href="css/information.css" type="text/css" rel="Stylesheet" />
+	</head>
+	<body>
+		<!-- 头部 -->
+		<header>
+			<!-- 标题导航栏 -->
+			<div id="top">
+				<div class="titleImg">
+					<svg id="logo" width="160" height="70">
+						<g>
+							<text alignment-baseline="before-edge" dominant-baseline="text-before-edge" font-family="hwhp" font-size="40" fill="url(#g1)" x="15" y="15">
+								电
+							</text>
+							<defs>
+								<linearGradient id="g1" x1="0" y1="0" x2="0" y2="100%">
+									<stop offset="0" stop-color="red"></stop>
+									<stop offset="1" stop-color="blue"></stop>
+								</linearGradient>
+							</defs>
+							<animateTransform id="a1" attributeName="transform" begin="2s;a3.end+1s" dur="3s" type="rotate"
+							                  from="0,35,35" to="360,35,35" repeatCount="1"/>
+						</g>
+						<g>
+							<text alignment-baseline="before-edge" dominant-baseline="text-before-edge" font-family="hwhp" font-size="40" fill="url(#g2)" x="60" y="15">
+								影
+							</text>
+							<defs>
+								<linearGradient id="g2" x1="0" y1="0" x2="0" y2="100%">
+									<stop offset="0" stop-color="blue"></stop>
+									<stop offset="1" stop-color="yellow"></stop>
+								</linearGradient>
+							</defs>
+							<animateTransform id="a2" attributeName="transform" begin="a1.end+1s" dur="3s" type="rotate"
+							                  from="0,80,35" to="360 80,35" repeatCount="1"/>
+						</g>
+						<g>
+							<text alignment-baseline="before-edge" dominant-baseline="text-before-edge" font-family="hwhp" font-size="40" fill="url(#g3)" x="105" y="15">
+								网
+							</text>
+							<defs>
+								<linearGradient id="g3" x1="0" y1="0" x2="0" y2="100%">
+									<stop offset="0" stop-color="yellow"></stop>
+									<stop offset="1" stop-color="red"></stop>
+								</linearGradient>
+							</defs>
+							<animateTransform id="a3" attributeName="transform" begin="a2.end+1s" dur="3s" type="rotate"
+							                  from="0,125,35" to="360 125,35" repeatCount="1"/>
+						</g>
+					</svg>
+				</div>
+				<div class="titleright">
+					<ul id="navCollection">
+						<li id="load"><a class="btnload" href="">请登陆</a>
+							<div class="load">
+								<div class="loadmain">
+									<span class="close">×</span>
+									<h1>用户登陆</h1>
+									<input type="text" placeholder="用户名/手机号"/>
+									<input type="password" placeholder="密码"/>
+									<div class="btn">
+										<button type="button">登陆</button>
+										<p><a href="register.html">没有帐号去注册</a></p>
+									</div>
+									<div class="loadtype">
+										<span>登陆方式</span>
+										<ul>
+											<li id="loadwx"><a href=""><b></b></a></li>
+											<li id="loadwb"><a href=""><b></b></a></li>
+											<li id="loadqq"><a href=""><b></b></a></li>
+											<li id="loadph"><a href=""><b></b></a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li id="register"><a href="register.html">注册</a>
+						</li>
+						<li id="desk"><a href="#"><b></b>放入桌面</a></li>
+						<li id="coll"><a href="#"><b></b>加入收藏</a></li>
+						<li id="message"><a href="#"><b></b>留言/求片</a></li>
+						<li id="blog"><a href="#"><b></b>关注微博</a></li>
+					</ul>
+					<ul id="search">
+						<li><input type="text" placeholder="请输入影片名或演员名"></li>
+						<li class="btn_search"><a href="#">搜索</a></li>
+						<li class="btn_record"><a href="#"><b></b>播放记录</a><div class="playlist"><ul>
+							<li><a href="">暂无播放记录</a></li>
+						</ul></div></li>
+					</ul>
+				</div>
+			</div>
+			<!--导航栏-->
+			<nav id="nav">
+				<ul class="navCatalog">
+					<li><a href="index.html">首页</a></li>
+					<li><a href="information.html">影讯</a></li>
+					<li><a href="forthcoming.html">今日影视</a></li>
+					<li><a href="waterfall.html">热映影视</a></li>
+					<li><a href="rank.html">电影票房</a></li>
+					<li><a href="sort.html">电视剧</a></li>
+					<li><a href="sort.html">电影</a></li>
+					<li><a href="sort.html">微电影</a></li>
+					<li><a href="sort.html">动漫</a></li>
+					<li><a href="sort.html">综艺节目</a></li>
+				</ul>
+			</nav>
+			<!--导航栏下的子栏-->
+			<div id="navitems">
+				<ul class="itemslistlf">
+					<li><a href="sort.html">电视剧：</a></li>
+					<li><a href="sort.html">国产</a></li>
+					<li><a href="sort.html">韩剧</a></li>
+					<li><a href="sort.html">美剧</a></li>
+					<li><a href="sort.html">英剧</a></li>
+					<li><a href="sort.html">港剧</a></li>
+					<li><a href="sort.html">台剧</a></li>
+					<li><a href="sort.html">日剧</a></li>
+					<li><a href="sort.html">泰剧</a></li>
+					<li><a href="sort.html">海外</a></li>
+				</ul>
+				<ul class="itemslistrt">
+					<li><a href="sort.html">电影：</a></li>
+					<li><a href="sort.html">动作片</a></li>
+					<li><a href="sort.html">喜剧片</a></li>
+					<li><a href="sort.html">爱情片</a></li>
+					<li><a href="sort.html">科幻片</a></li>
+					<li><a href="sort.html">恐怖片</a></li>
+					<li><a href="sort.html">战争片</a></li>
+					<li><a href="sort.html">剧情片</a></li>
+				</ul>
+			</div>
+		</header>
+		<!-- 主体 -->
+		<section id="main">
+			<div class="inforbody">
+				<div class="header">
+					<ul>
+						<li><a data-tab="tab1" class="hover" href="#">最新影讯</a></li>
+						<li><a data-tab="tab2" href="#">娱乐新闻</a></li>
+						<li><a data-tab="tab3" href="#">电影播报</a></li>
+						<li><a data-tab="tab4" href="#">电视剧动态</a></li>
+						<li><a data-tab="tab5" href="#">星闻</a></li>
+					</ul>
+				</div>
+				<div class="body tab1 in">
+					<ul>
+						<li>
+							<h1><a href="">《蓝海》里的小骇客就是当年和孔刘交换灵魂的小帅哥！</a></h1>
+							<img src="images/information/news01.jpg" alt="">
+							<span>2018-01-07 14:01</span>
+							<p>相信爱看韩剧的你已经发现到他了，《蓝色海洋的传说》中在李敏镐身旁的小帅哥骇客申原昊，就是当年与孔刘合演《BIG》(另译:真爱上错身)的他啦！<a href="#">详情</a></p>
+						</li>
+						<li>
+							<h1><a href="">韩国粉丝给偶像送花环，里面还有大米和蜂窝煤！</a></h1>
+							<img src="images/information/news02.jpg" alt="">
+							<span>2018-01-07 13:01</span>
+							<p>从前粉丝对偶像出手太阔绰一度是媒体非议的话题，但如今韩饭已给大家做好榜样，支援偶像的同时也做了慈善，一举两得！只不过，第一次见到的人也许会大吃一惊哦！<a href="#">详情</a></p>
+						</li>
+						<li>
+							<h1><a href="">《蓝海》里的小骇客 就是当年和孔刘交换灵魂的小帅哥！</a></h1>
+							<img src="images/information/news03.jpg" alt="">
+							<span>2018-01-07 14:01</span>
+							<p>相信爱看韩剧的你已经发现到他了，《蓝色海洋的传说》中在李敏镐身旁的小帅哥骇客申原昊，就是当年与孔刘合演《BIG》(另译:真爱上错身)的他啦！<a href="#">详情</a></p>
+						</li>
+						<li>
+							<h1><a href="">不看后悔！ 如何假装看懂《星球大战外传》</a></h1>
+							<img src="images/information/news04.jpg" alt="">
+							<span>2018-01-07 12:01</span>
+							<p>荆楚网-楚天都市报1月7日报道楚天都市报记者戎钰实习生杨心童好莱坞科幻片《星球大战外传：侠盗一号》昨日全国公映，经典对白“愿原力与你同在”再次在内地影院响起。<a href="#">详情</a></p>
+						</li>
+						<li>
+							<h1><a href="">90后女网红直播撕书：我不看书照样开跑车</a></h1>
+							<img src="images/information/news05.jpg" alt="">
+							<span>2018-01-07 12:01</span>
+							<p>芙伊伊网红直播撕书1月7日报道1月3日，一位名为“芙伊伊”的女主播在直播里晒粉丝送给她的新年礼物，其中有一本《史玉柱的创业智慧》。<a href="#">详情</a></p>
+						</li>
+						<li>
+							<h1><a href="">多妈晒多多和妹妹亲吻照 黄磊感叹雾霾天</a></h1>
+							<img src="images/information/news06.jpg" alt="">
+							<span>2018-01-07 12:01</span>
+							<p>多妈黄磊多多和妹妹1月7日报道1月6日，黄磊先晒出女儿多多和妹妹在草地上拥抱的照片，画面十分温馨。当晚，多妈孙莉也晒出“同款”多多和妹妹亲亲照。<a href="#">详情</a></p>
+						</li>
+						<li>
+							<h1><a href="">姜文甄子丹能说会打够抢镜 还有少有光剑打斗戏</a></h1>
+							<img src="images/information/news07.jpg" alt="">
+							<span>2018-01-07 12:01</span>
+							<p>莱娅公主“穿越”入戏。黑武士现身。男女主角。帝国士兵。“盲武僧”甄子丹单挑暴风兵。“神枪手”姜文战斗力惊人。《星球大战：侠盗一号》海报。场景恢弘。<a href="#">详情</a></p>
+						</li>
+						<li>
+							<h1><a href="">《罗曼蒂克消亡史》快下档了 同名小说还在热销</a></h1>
+							<img src="images/information/news08.jpg" alt="">
+							<span>2018-01-07 12:01</span>
+							<p>钱江晚报1月7日报道在电影《罗曼蒂克消亡史》快下档的时候，同名小说《罗曼蒂克消亡史》还被各大书店摆在最显眼的位置。<a href="#">详情</a></p>
+						</li>
+						<li>
+							<h1><a href="">解决了一点星战遗留老问题 侠盗一号比星战7好看</a></h1>
+							<img src="images/information/news09.jpg" alt="">
+							<span>2018-01-07 12:01</span>
+							<p>郑州晚报1月7日报道昨天，由美国卢卡斯影业制作的《星球大战外传：侠盗一号》在中国内地上映。最让中国影迷注目的是首度出现在“星战”系列里的甄子丹和姜文！<a href="#">详情</a></p>
+						</li>
+						<li>
+							<h1><a href="">王宝强白客唱跳拜年 小岳岳蒙圈“惨遭嫌弃”</a></h1>
+							<img src="images/information/news10.jpg" alt="">
+							<span>2018-01-07 12:01</span>
+							<p>1月7日报道由王宝强首次执导，王宝强、白客、岳云鹏、柳岩领衔主演的电影《大闹天竺》即将于1月28日大年初一全国公映。<a href="#">详情</a></p>
+						</li>
+					</ul>
+					<div class="page">
+						<ul>
+							<li><a href="">首页</a></li>
+							<li><a href="">上一页</a></li>
+							<li><a class="hover" href="">1</a></li>
+							<li><a href="">2</a></li>
+							<li><a href="">3</a></li>
+							<li><a href="">4</a></li>
+							<li><a href="">5</a></li>
+							<li><a href="">下一页</a></li>
+							<li><a href="">尾页</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="body tab2">
+					<ul>
+						<li>
+							<h1><a href="">多妈晒多多和妹妹亲吻照 黄磊感叹雾霾天</a></h1>
+							<img src="images/information/news06.jpg" alt="">
+							<span>2018-01-07 12:01</span>
+							<p>多妈黄磊多多和妹妹1月7日报道1月6日，黄磊先晒出女儿多多和妹妹在草地上拥抱的照片，画面十分温馨。当晚，多妈孙莉也晒出“同款”多多和妹妹亲亲照。<a href="#">详情</a></p>
+						</li>
+						<li>
+							<h1><a href="">姜文甄子丹能说会打够抢镜 还有少有光剑打斗戏</a></h1>
+							<img src="images/information/news07.jpg" alt="">
+							<span>2018-01-07 12:01</span>
+							<p>莱娅公主“穿越”入戏。黑武士现身。男女主角。帝国士兵。“盲武僧”甄子丹单挑暴风兵。“神枪手”姜文战斗力惊人。《星球大战：侠盗一号》海报。场景恢弘。<a href="#">详情</a></p>
+						</li>
+						<li>
+							<h1><a href="">多妈晒多多和妹妹亲吻照 黄磊感叹雾霾天</a></h1>
+							<img src="images/information/news06.jpg" alt="">
+							<span>2018-01-07 12:01</span>
+							<p>多妈黄磊多多和妹妹1月7日报道1月6日，黄磊先晒出女儿多多和妹妹在草地上拥抱的照片，画面十分温馨。当晚，多妈孙莉也晒出“同款”多多和妹妹亲亲照。<a href="#">详情</a></p>
+						</li>
+						<li>
+							<h1><a href="">姜文甄子丹能说会打够抢镜 还有少有光剑打斗戏</a></h1>
+							<img src="images/information/news07.jpg" alt="">
+							<span>2018-01-07 12:01</span>
+							<p>莱娅公主“穿越”入戏。黑武士现身。男女主角。帝国士兵。“盲武僧”甄子丹单挑暴风兵。“神枪手”姜文战斗力惊人。《星球大战：侠盗一号》海报。场景恢弘。<a href="#">详情</a></p>
+						</li>
+						<li>
+							<h1><a href="">多妈晒多多和妹妹亲吻照 黄磊感叹雾霾天</a></h1>
+							<img src="images/information/news06.jpg" alt="">
+							<span>2018-01-07 12:01</span>
+							<p>多妈黄磊多多和妹妹1月7日报道1月6日，黄磊先晒出女儿多多和妹妹在草地上拥抱的照片，画面十分温馨。当晚，多妈孙莉也晒出“同款”多多和妹妹亲亲照。<a href="#">详情</a></p>
+						</li>
+						<li>
+							<h1><a href="">姜文甄子丹能说会打够抢镜 还有少有光剑打斗戏</a></h1>
+							<img src="images/information/news07.jpg" alt="">
+							<span>2018-01-07 12:01</span>
+							<p>莱娅公主“穿越”入戏。黑武士现身。男女主角。帝国士兵。“盲武僧”甄子丹单挑暴风兵。“神枪手”姜文战斗力惊人。《星球大战：侠盗一号》海报。场景恢弘。<a href="#">详情</a></p>
+						</li>
+						<li>
+							<h1><a href="">多妈晒多多和妹妹亲吻照 黄磊感叹雾霾天</a></h1>
+							<img src="images/information/news06.jpg" alt="">
+							<span>2018-01-07 12:01</span>
+							<p>多妈黄磊多多和妹妹1月7日报道1月6日，黄磊先晒出女儿多多和妹妹在草地上拥抱的照片，画面十分温馨。当晚，多妈孙莉也晒出“同款”多多和妹妹亲亲照。<a href="#">详情</a></p>
+						</li>
+						<li>
+							<h1><a href="">姜文甄子丹能说会打够抢镜 还有少有光剑打斗戏</a></h1>
+							<img src="images/information/news07.jpg" alt="">
+							<span>2018-01-07 12:01</span>
+							<p>莱娅公主“穿越”入戏。黑武士现身。男女主角。帝国士兵。“盲武僧”甄子丹单挑暴风兵。“神枪手”姜文战斗力惊人。《星球大战：侠盗一号》海报。场景恢弘。<a href="#">详情</a></p>
+						</li>
+						<li>
+							<h1><a href="">多妈晒多多和妹妹亲吻照 黄磊感叹雾霾天</a></h1>
+							<img src="images/information/news06.jpg" alt="">
+							<span>2018-01-07 12:01</span>
+							<p>多妈黄磊多多和妹妹1月7日报道1月6日，黄磊先晒出女儿多多和妹妹在草地上拥抱的照片，画面十分温馨。当晚，多妈孙莉也晒出“同款”多多和妹妹亲亲照。<a href="#">详情</a></p>
+						</li>
+						<li>
+							<h1><a href="">姜文甄子丹能说会打够抢镜 还有少有光剑打斗戏</a></h1>
+							<img src="images/information/news07.jpg" alt="">
+							<span>2018-01-07 12:01</span>
+							<p>莱娅公主“穿越”入戏。黑武士现身。男女主角。帝国士兵。“盲武僧”甄子丹单挑暴风兵。“神枪手”姜文战斗力惊人。《星球大战：侠盗一号》海报。场景恢弘。<a href="#">详情</a></p>
+						</li>
+
+					</ul>
+					<div class="page">
+						<ul>
+							<li><a href="">首页</a></li>
+							<li><a href="">上一页</a></li>
+							<li><a class="hover" href="">1</a></li>
+							<li><a href="">2</a></li>
+							<li><a href="">3</a></li>
+							<li><a href="">4</a></li>
+							<li><a href="">5</a></li>
+							<li><a href="">下一页</a></li>
+							<li><a href="">尾页</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="body tab3">
+					<ul>
+						<li>
+							<h1><a href="">《蓝海》里的小骇客就是当年和孔刘交换灵魂的小帅哥！</a></h1>
+							<img src="images/information/news01.jpg" alt="">
+							<span>2018-01-07 14:01</span>
+							<p>相信爱看韩剧的你已经发现到他了，《蓝色海洋的传说》中在李敏镐身旁的小帅哥骇客申原昊，就是当年与孔刘合演《BIG》(另译:真爱上错身)的他啦！<a href="#">详情</a></p>
+						</li>
+						<li>
+							<h1><a href="">韩国粉丝给偶像送花环，里面还有大米和蜂窝煤！</a></h1>
+							<img src="images/information/news02.jpg" alt="">
+							<span>2018-01-07 13:01</span>
+							<p>从前粉丝对偶像出手太阔绰一度是媒体非议的话题，但如今韩饭已给大家做好榜样，支援偶像的同时也做了慈善，一举两得！只不过，第一次见到的人也许会大吃一惊哦！<a href="#">详情</a></p>
+						</li>
+						<li>
+							<h1><a href="">《蓝海》里的小骇客 就是当年和孔刘交换灵魂的小帅哥！</a></h1>
+							<img src="images/information/news03.jpg" alt="">
+							<span>2018-01-07 14:01</span>
+							<p>相信爱看韩剧的你已经发现到他了，《蓝色海洋的传说》中在李敏镐身旁的小帅哥骇客申原昊，就是当年与孔刘合演《BIG》(另译:真爱上错身)的他啦！<a href="#">详情</a></p>
+						</li>
+						<li>
+							<h1><a href="">不看后悔！ 如何假装看懂《星球大战外传》</a></h1>
+							<img src="images/information/news04.jpg" alt="">
+							<span>2018-01-07 12:01</span>
+							<p>荆楚网-楚天都市报1月7日报道楚天都市报记者戎钰实习生杨心童好莱坞科幻片《星球大战外传：侠盗一号》昨日全国公映，经典对白“愿原力与你同在”再次在内地影院响起。<a href="#">详情</a></p>
+						</li>
+						<li>
+							<h1><a href="">90后女网红直播撕书：我不看书照样开跑车</a></h1>
+							<img src="images/information/news05.jpg" alt="">
+							<span>2018-01-07 12:01</span>
+							<p>芙伊伊网红直播撕书1月7日报道1月3日，一位名为“芙伊伊”的女主播在直播里晒粉丝送给她的新年礼物，其中有一本《史玉柱的创业智慧》。<a href="#">详情</a></p>
+						</li>
+						<li>
+							<h1><a href="">多妈晒多多和妹妹亲吻照 黄磊感叹雾霾天</a></h1>
+							<img src="images/information/news06.jpg" alt="">
+							<span>2018-01-07 12:01</span>
+							<p>多妈黄磊多多和妹妹1月7日报道1月6日，黄磊先晒出女儿多多和妹妹在草地上拥抱的照片，画面十分温馨。当晚，多妈孙莉也晒出“同款”多多和妹妹亲亲照。<a href="#">详情</a></p>
+						</li>
+						<li>
+							<h1><a href="">姜文甄子丹能说会打够抢镜 还有少有光剑打斗戏</a></h1>
+							<img src="images/information/news07.jpg" alt="">
+							<span>2018-01-07 12:01</span>
+							<p>莱娅公主“穿越”入戏。黑武士现身。男女主角。帝国士兵。“盲武僧”甄子丹单挑暴风兵。“神枪手”姜文战斗力惊人。《星球大战：侠盗一号》海报。场景恢弘。<a href="#">详情</a></p>
+						</li>
+						<li>
+							<h1><a href="">《罗曼蒂克消亡史》快下档了 同名小说还在热销</a></h1>
+							<img src="images/information/news08.jpg" alt="">
+							<span>2018-01-07 12:01</span>
+							<p>钱江晚报1月7日报道在电影《罗曼蒂克消亡史》快下档的时候，同名小说《罗曼蒂克消亡史》还被各大书店摆在最显眼的位置。<a href="#">详情</a></p>
+						</li>
+						<li>
+							<h1><a href="">解决了一点星战遗留老问题 侠盗一号比星战7好看</a></h1>
+							<img src="images/information/news09.jpg" alt="">
+							<span>2018-01-07 12:01</span>
+							<p>郑州晚报1月7日报道昨天，由美国卢卡斯影业制作的《星球大战外传：侠盗一号》在中国内地上映。最让中国影迷注目的是首度出现在“星战”系列里的甄子丹和姜文！<a href="#">详情</a></p>
+						</li>
+						<li>
+							<h1><a href="">王宝强白客唱跳拜年 小岳岳蒙圈“惨遭嫌弃”</a></h1>
+							<img src="images/information/news10.jpg" alt="">
+							<span>2018-01-07 12:01</span>
+							<p>1月7日报道由王宝强首次执导，王宝强、白客、岳云鹏、柳岩领衔主演的电影《大闹天竺》即将于1月28日大年初一全国公映。<a href="#">详情</a></p>
+						</li>
+					</ul>
+					<div class="page">
+						<ul>
+							<li><a href="">首页</a></li>
+							<li><a href="">上一页</a></li>
+							<li><a class="hover" href="">1</a></li>
+							<li><a href="">2</a></li>
+							<li><a href="">3</a></li>
+							<li><a href="">4</a></li>
+							<li><a href="">5</a></li>
+							<li><a href="">下一页</a></li>
+							<li><a href="">尾页</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="body tab4">
+					<ul>
+						<li>
+							<h1><a href="">《蓝海》里的小骇客就是当年和孔刘交换灵魂的小帅哥！</a></h1>
+							<img src="images/information/news04.jpg" alt="">
+							<span>2018-01-07 14:01</span>
+							<p>相信爱看韩剧的你已经发现到他了，《蓝色海洋的传说》中在李敏镐身旁的小帅哥骇客申原昊，就是当年与孔刘合演《BIG》(另译:真爱上错身)的他啦！<a href="#">详情</a></p>
+						</li>
+						<li>
+							<h1><a href="">韩国粉丝给偶像送花环，里面还有大米和蜂窝煤！</a></h1>
+							<img src="images/information/news02.jpg" alt="">
+							<span>2018-01-07 13:01</span>
+							<p>从前粉丝对偶像出手太阔绰一度是媒体非议的话题，但如今韩饭已给大家做好榜样，支援偶像的同时也做了慈善，一举两得！只不过，第一次见到的人也许会大吃一惊哦！<a href="#">详情</a></p>
+						</li>
+						<li>
+							<h1><a href="">《蓝海》里的小骇客 就是当年和孔刘交换灵魂的小帅哥！</a></h1>
+							<img src="images/information/news06.jpg" alt="">
+							<span>2018-01-07 14:01</span>
+							<p>相信爱看韩剧的你已经发现到他了，《蓝色海洋的传说》中在李敏镐身旁的小帅哥骇客申原昊，就是当年与孔刘合演《BIG》(另译:真爱上错身)的他啦！<a href="#">详情</a></p>
+						</li>
+						<li>
+							<h1><a href="">不看后悔！ 如何假装看懂《星球大战外传》</a></h1>
+							<img src="images/information/news08.jpg" alt="">
+							<span>2018-01-07 12:01</span>
+							<p>荆楚网-楚天都市报1月7日报道楚天都市报记者戎钰实习生杨心童好莱坞科幻片《星球大战外传：侠盗一号》昨日全国公映，经典对白“愿原力与你同在”再次在内地影院响起。<a href="#">详情</a></p>
+						</li>
+						<li>
+							<h1><a href="">90后女网红直播撕书：我不看书照样开跑车</a></h1>
+							<img src="images/information/news05.jpg" alt="">
+							<span>2018-01-07 12:01</span>
+							<p>芙伊伊网红直播撕书1月7日报道1月3日，一位名为“芙伊伊”的女主播在直播里晒粉丝送给她的新年礼物，其中有一本《史玉柱的创业智慧》。<a href="#">详情</a></p>
+						</li>
+						<li>
+							<h1><a href="">多妈晒多多和妹妹亲吻照 黄磊感叹雾霾天</a></h1>
+							<img src="images/information/news10.jpg" alt="">
+							<span>2018-01-07 12:01</span>
+							<p>多妈黄磊多多和妹妹1月7日报道1月6日，黄磊先晒出女儿多多和妹妹在草地上拥抱的照片，画面十分温馨。当晚，多妈孙莉也晒出“同款”多多和妹妹亲亲照。<a href="#">详情</a></p>
+						</li>
+						<li>
+							<h1><a href="">姜文甄子丹能说会打够抢镜 还有少有光剑打斗戏</a></h1>
+							<img src="images/information/news07.jpg" alt="">
+							<span>2018-01-07 12:01</span>
+							<p>莱娅公主“穿越”入戏。黑武士现身。男女主角。帝国士兵。“盲武僧”甄子丹单挑暴风兵。“神枪手”姜文战斗力惊人。《星球大战：侠盗一号》海报。场景恢弘。<a href="#">详情</a></p>
+						</li>
+						<li>
+							<h1><a href="">《罗曼蒂克消亡史》快下档了 同名小说还在热销</a></h1>
+							<img src="images/information/news08.jpg" alt="">
+							<span>2018-01-07 12:01</span>
+							<p>钱江晚报1月7日报道在电影《罗曼蒂克消亡史》快下档的时候，同名小说《罗曼蒂克消亡史》还被各大书店摆在最显眼的位置。<a href="#">详情</a></p>
+						</li>
+						<li>
+							<h1><a href="">解决了一点星战遗留老问题 侠盗一号比星战7好看</a></h1>
+							<img src="images/information/news02.jpg" alt="">
+							<span>2018-01-07 12:01</span>
+							<p>郑州晚报1月7日报道昨天，由美国卢卡斯影业制作的《星球大战外传：侠盗一号》在中国内地上映。最让中国影迷注目的是首度出现在“星战”系列里的甄子丹和姜文！<a href="#">详情</a></p>
+						</li>
+						<li>
+							<h1><a href="">王宝强白客唱跳拜年 小岳岳蒙圈“惨遭嫌弃”</a></h1>
+							<img src="images/information/news03.jpg" alt="">
+							<span>2018-01-07 12:01</span>
+							<p>1月7日报道由王宝强首次执导，王宝强、白客、岳云鹏、柳岩领衔主演的电影《大闹天竺》即将于1月28日大年初一全国公映。<a href="#">详情</a></p>
+						</li>
+					</ul>
+					<div class="page">
+						<ul>
+							<li><a href="">首页</a></li>
+							<li><a href="">上一页</a></li>
+							<li><a class="hover" href="">1</a></li>
+							<li><a href="">2</a></li>
+							<li><a href="">3</a></li>
+							<li><a href="">4</a></li>
+							<li><a href="">5</a></li>
+							<li><a href="">下一页</a></li>
+							<li><a href="">尾页</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="body tab5">
+					<ul>
+						<li>
+							<h1><a href="">多妈晒多多和妹妹亲吻照 黄磊感叹雾霾天</a></h1>
+							<img src="images/information/news06.jpg" alt="">
+							<span>2018-01-07 12:01</span>
+							<p>多妈黄磊多多和妹妹1月7日报道1月6日，黄磊先晒出女儿多多和妹妹在草地上拥抱的照片，画面十分温馨。当晚，多妈孙莉也晒出“同款”多多和妹妹亲亲照。<a href="#">详情</a></p>
+						</li>
+						<li>
+							<h1><a href="">姜文甄子丹能说会打够抢镜 还有少有光剑打斗戏</a></h1>
+							<img src="images/information/news07.jpg" alt="">
+							<span>2018-01-07 12:01</span>
+							<p>莱娅公主“穿越”入戏。黑武士现身。男女主角。帝国士兵。“盲武僧”甄子丹单挑暴风兵。“神枪手”姜文战斗力惊人。《星球大战：侠盗一号》海报。场景恢弘。<a href="#">详情</a></p>
+						</li>
+						<li>
+							<h1><a href="">多妈晒多多和妹妹亲吻照 黄磊感叹雾霾天</a></h1>
+							<img src="images/information/news06.jpg" alt="">
+							<span>2018-01-07 12:01</span>
+							<p>多妈黄磊多多和妹妹1月7日报道1月6日，黄磊先晒出女儿多多和妹妹在草地上拥抱的照片，画面十分温馨。当晚，多妈孙莉也晒出“同款”多多和妹妹亲亲照。<a href="#">详情</a></p>
+						</li>
+						<li>
+							<h1><a href="">姜文甄子丹能说会打够抢镜 还有少有光剑打斗戏</a></h1>
+							<img src="images/information/news07.jpg" alt="">
+							<span>2018-01-07 12:01</span>
+							<p>莱娅公主“穿越”入戏。黑武士现身。男女主角。帝国士兵。“盲武僧”甄子丹单挑暴风兵。“神枪手”姜文战斗力惊人。《星球大战：侠盗一号》海报。场景恢弘。<a href="#">详情</a></p>
+						</li>
+						<li>
+							<h1><a href="">多妈晒多多和妹妹亲吻照 黄磊感叹雾霾天</a></h1>
+							<img src="images/information/news06.jpg" alt="">
+							<span>2018-01-07 12:01</span>
+							<p>多妈黄磊多多和妹妹1月7日报道1月6日，黄磊先晒出女儿多多和妹妹在草地上拥抱的照片，画面十分温馨。当晚，多妈孙莉也晒出“同款”多多和妹妹亲亲照。<a href="#">详情</a></p>
+						</li>
+						<li>
+							<h1><a href="">姜文甄子丹能说会打够抢镜 还有少有光剑打斗戏</a></h1>
+							<img src="images/information/news07.jpg" alt="">
+							<span>2018-01-07 12:01</span>
+							<p>莱娅公主“穿越”入戏。黑武士现身。男女主角。帝国士兵。“盲武僧”甄子丹单挑暴风兵。“神枪手”姜文战斗力惊人。《星球大战：侠盗一号》海报。场景恢弘。<a href="#">详情</a></p>
+						</li>
+						<li>
+							<h1><a href="">多妈晒多多和妹妹亲吻照 黄磊感叹雾霾天</a></h1>
+							<img src="images/information/news06.jpg" alt="">
+							<span>2018-01-07 12:01</span>
+							<p>多妈黄磊多多和妹妹1月7日报道1月6日，黄磊先晒出女儿多多和妹妹在草地上拥抱的照片，画面十分温馨。当晚，多妈孙莉也晒出“同款”多多和妹妹亲亲照。<a href="#">详情</a></p>
+						</li>
+						<li>
+							<h1><a href="">姜文甄子丹能说会打够抢镜 还有少有光剑打斗戏</a></h1>
+							<img src="images/information/news07.jpg" alt="">
+							<span>2018-01-07 12:01</span>
+							<p>莱娅公主“穿越”入戏。黑武士现身。男女主角。帝国士兵。“盲武僧”甄子丹单挑暴风兵。“神枪手”姜文战斗力惊人。《星球大战：侠盗一号》海报。场景恢弘。<a href="#">详情</a></p>
+						</li>
+						<li>
+							<h1><a href="">多妈晒多多和妹妹亲吻照 黄磊感叹雾霾天</a></h1>
+							<img src="images/information/news06.jpg" alt="">
+							<span>2018-01-07 12:01</span>
+							<p>多妈黄磊多多和妹妹1月7日报道1月6日，黄磊先晒出女儿多多和妹妹在草地上拥抱的照片，画面十分温馨。当晚，多妈孙莉也晒出“同款”多多和妹妹亲亲照。<a href="#">详情</a></p>
+						</li>
+						<li>
+							<h1><a href="">姜文甄子丹能说会打够抢镜 还有少有光剑打斗戏</a></h1>
+							<img src="images/information/news07.jpg" alt="">
+							<span>2018-01-07 12:01</span>
+							<p>莱娅公主“穿越”入戏。黑武士现身。男女主角。帝国士兵。“盲武僧”甄子丹单挑暴风兵。“神枪手”姜文战斗力惊人。《星球大战：侠盗一号》海报。场景恢弘。<a href="#">详情</a></p>
+						</li>
+
+					</ul>
+					<div class="page">
+						<ul>
+							<li><a href="">首页</a></li>
+							<li><a href="">上一页</a></li>
+							<li><a class="hover" href="">1</a></li>
+							<li><a href="">2</a></li>
+							<li><a href="">3</a></li>
+							<li><a href="">4</a></li>
+							<li><a href="">5</a></li>
+							<li><a href="">下一页</a></li>
+							<li><a href="">尾页</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<aside class="inforrt">
+				<div class="hotmouse">
+					<div class="header">
+						<h3>热门影视</h3>
+					</div>
+					<div class="body">
+						<ul>
+							<li>
+								<h4 class="title">娘道</h4>
+								<div class="detail in">
+									<div class="detaillf">
+										<a href="details.html">
+											<img src="images/sort/a_100089604_m_601_m10_180_236.jpg" alt=""></a>
+									</div>
+									<div class="detailrt">
+										<p>
+											<b>主演：</b>
+											<span>岳丽娜/于毅</span></p>
+										<p>
+											<b>类型：</b>
+											<span>年代剧</span></p>
+										<p>
+											<b>上映：</b>
+											<span>2018年</span></p>
+										<p>
+											<b>状态：</b>
+											<span>更新至19集</span></p>
+									</div>
+								</div>
+							</li>
+							<li>
+								<h4 class="title">海贼王</h4>
+								<div class="detail">
+									<div class="detaillf">
+										<a href="details.html">
+											<img src="images/sort/a_100013977_m_601_m10_180_236.jpg" alt=""></a>
+									</div>
+									<div class="detailrt">
+										<p>
+											<b>作者：</b>
+											<span>尾田荣一郎</span></p>
+										<p>
+											<b>类型：</b>
+											<span>少年漫画</span></p>
+										<p>
+											<b>上映：</b>
+											<span>1999年10月20日</span></p>
+										<p>
+											<b>状态：</b>
+											<span>更新至852集</span></p>
+									</div>
+								</div>
+							</li>
+							<li>
+								<h4 class="title">桃花依旧笑春风</h4>
+								<div class="detail">
+									<div class="detaillf">
+										<a href="details.html">
+											<img src="images/sort/a_100162358_m_601_m6_180_236.jpg" alt=""></a>
+									</div>
+									<div class="detailrt">
+										<p>
+											<b>主演：</b>
+											<span>苗圃/陈龙</span></p>
+										<p>
+											<b>类型：</b>
+											<span>剧情</span></p>
+										<p>
+											<b>上映：</b>
+											<span>2018年</span></p>
+										<p>
+											<b>状态：</b>
+											<span>更新至28集</span></p>
+									</div>
+								</div>
+							</li>
+							<li>
+								<h4 class="title">胜利之路</h4>
+								<div class="detail">
+									<div class="detaillf">
+										<a href="details.html">
+											<img src="images/sort/a_100084306_m_601_m8_180_236.jpg" alt=""></a>
+									</div>
+									<div class="detailrt">
+										<p>
+											<b>主演：</b>
+											<span>郭京飞/郭珍霓</span></p>
+										<p>
+											<b>类型：</b>
+											<span>战争</span></p>
+										<p>
+											<b>上映：</b>
+											<span>2018年</span></p>
+										<p>
+											<b>状态：</b>
+											<span>共38集全</span></p>
+									</div>
+								</div>
+							</li>
+							<li>
+								<h4 class="title">上海风云</h4>
+								<div class="detail">
+									<div class="detaillf">
+										<a href="details.html">
+											<img src="images/sort/a_100118139_m_601_m3_180_236.jpg" alt=""></a>
+									</div>
+									<div class="detailrt">
+										<p>
+											<b>主演：</b>
+											<span>寇世勋/程前</span></p>
+										<p>
+											<b>类型：</b>
+											<span>谍战剧</span></p>
+										<p>
+											<b>上映：</b>
+											<span>2018年</span></p>
+										<p>
+											<b>状态：</b>
+											<span>更新至20集</span></p>
+									</div>
+								</div>
+							</li>
+							<li>
+								<h4 class="title">向往的生活第2季</h4>
+								<div class="detail">
+									<div class="detaillf">
+										<a href="details.html">
+											<img src="images/sort/a_100109335_m_601_m18_180_236.jpg" alt=""></a>
+									</div>
+									<div class="detailrt">
+										<p>
+											<b>主演：</b>
+											<span>何炅/黄磊/刘宪华</span></p>
+										<p>
+											<b>类型：</b>
+											<span>综艺节目</span></p>
+										<p>
+											<b>上映：</b>
+											<span>2018年</span></p>
+										<p>
+											<b>状态：</b>
+											<span>更新至2018-07-06期</span></p>
+									</div>
+								</div>
+							</li>
+							<li>
+								<h4 class="title">我不是差等生</h4>
+								<div class="detail">
+									<div class="detaillf">
+										<a href="details.html">
+											<img src="images/sort/a_100121087_m_601_m3_180_236.jpg" alt=""></a>
+									</div>
+									<div class="detailrt">
+										<p>
+											<b>主演：</b>
+											<span>冯宪珍/杨丽晓</span></p>
+										<p>
+											<b>类型：</b>
+											<span>剧情</span></p>
+										<p>
+											<b>上映：</b>
+											<span>2004年</span></p>
+										<p>
+											<b>状态：</b>
+											<span>完结</span></p>
+									</div>
+								</div>
+							</li>
+							<li>
+								<h4 class="title">中国好声音</h4>
+								<div class="detail">
+									<div class="detaillf">
+										<a href="details.html">
+											<img src="images/sort/a_100118592_m_601_m18_180_236.jpg" alt=""></a>
+									</div>
+									<div class="detailrt">
+										<p>
+											<b>主演：</b>
+											<span>李建/周杰伦</span></p>
+										<p>
+											<b>类型：</b>
+											<span>综艺节目</span></p>
+										<p>
+											<b>上映：</b>
+											<span>2018年</span></p>
+										<p>
+											<b>状态：</b>
+											<span>更新至2018-09-14期</span></p>
+									</div>
+								</div>
+							</li>
+							<li>
+								<h4 class="title">生于70年代</h4>
+								<div class="detail">
+									<div class="detaillf">
+										<a href="details.html">
+											<img src="images/sort/a_100088765_m_601_m5_180_236.jpg" alt=""></a>
+									</div>
+									<div class="detailrt">
+										<p>
+											<b>主演：</b>
+											<span>姚笛/李佳航</span></p>
+										<p>
+											<b>类型：</b>
+											<span>都市</span></p>
+										<p>
+											<b>上映：</b>
+											<span>2018年</span></p>
+										<p>
+											<b>状态：</b>
+											<span>更新至2集</span></p>
+									</div>
+								</div>
+							</li>
+							<li>
+								<h4 class="title">青色花开终有时</h4>
+								<div class="detail">
+									<div class="detaillf">
+										<a href="details.html">
+											<img src="images/sort/a_100183608_m_601_m3_180_236.jpg" alt=""></a>
+									</div>
+									<div class="detailrt">
+										<p>
+											<b>主演：</b>
+											<span>张鑫/张灵儿</span></p>
+										<p>
+											<b>类型：</b>
+											<span>言情剧</span></p>
+										<p>
+											<b>上映：</b>
+											<span>2018年</span></p>
+										<p>
+											<b>状态：</b>
+											<span>更新至12集</span></p>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</aside>
+		</section>
+		<!--底部-->
+		<footer	id="foot">
+			<p><a href="#">关于我</a>|<a href="#">联系我</a>|<a href="#">商家入驻</a>|<a href="#">友情链接</a></p>
+			<p>互联网出版许可证编号新出网证(京)字000号|出版物经营许可证|网络文化经营许可证京网文[2018]0000-000号|违法和不良信息举报电话：123456789</p>
+			<p>Copyright © 2018  我的电影网 版权所有|消费者维权热线：12345</p>
+		</footer>
+	<script src="js/vue.js"></script>
+	<script src="js/jquery-1.11.3.js"></script>
+	<script src="js/information.js"></script>
+	</body>
+</html>
+
+
+
+
+

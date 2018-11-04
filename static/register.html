@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Insert a title</title>
+	<link href="css/register.css" type="text/css" rel="Stylesheet" />
+	</head>
+	<body>
+		<header>
+			<!-- 标题导航栏 -->
+			<div id="top">
+				<div class="titleImg">
+					<svg id="logo" width="160" height="70">
+						<g>
+							<text alignment-baseline="before-edge" dominant-baseline="text-before-edge" font-family="hwhp" font-size="40" fill="url(#g1)" x="15" y="15">
+								电
+							</text>
+							<defs>
+								<linearGradient id="g1" x1="0" y1="0" x2="0" y2="100%">
+									<stop offset="0" stop-color="red"></stop>
+									<stop offset="1" stop-color="blue"></stop>
+								</linearGradient>
+							</defs>
+							<animateTransform id="a1" attributeName="transform" begin="2s;a3.end+1s" dur="3s" type="rotate"
+							                  from="0,35,35" to="360,35,35" repeatCount="1"/>
+						</g>
+						<g>
+							<text alignment-baseline="before-edge" dominant-baseline="text-before-edge" font-family="hwhp" font-size="40" fill="url(#g2)" x="60" y="15">
+								影
+							</text>
+							<defs>
+								<linearGradient id="g2" x1="0" y1="0" x2="0" y2="100%">
+									<stop offset="0" stop-color="blue"></stop>
+									<stop offset="1" stop-color="yellow"></stop>
+								</linearGradient>
+							</defs>
+							<animateTransform id="a2" attributeName="transform" begin="a1.end+1s" dur="3s" type="rotate"
+							                  from="0,80,35" to="360 80,35" repeatCount="1"/>
+						</g>
+						<g>
+							<text alignment-baseline="before-edge" dominant-baseline="text-before-edge" font-family="hwhp" font-size="40" fill="url(#g3)" x="105" y="15">
+								网
+							</text>
+							<defs>
+								<linearGradient id="g3" x1="0" y1="0" x2="0" y2="100%">
+									<stop offset="0" stop-color="yellow"></stop>
+									<stop offset="1" stop-color="red"></stop>
+								</linearGradient>
+							</defs>
+							<animateTransform id="a3" attributeName="transform" begin="a2.end+1s" dur="3s" type="rotate"
+							                  from="0,125,35" to="360 125,35" repeatCount="1"/>
+						</g>
+					</svg>
+				</div>
+			</div>
+		</header>
+		<div id="main">
+			<div class="main">
+				<h3>用户注册</h3>
+				<form>
+					<div class="uname">
+						<label for="uname">用户名:<i></i></label>
+						<input id="uname" spellcheck="false" name="name" type="text" maxlength="20"/>
+						<span>支持字母、数字和“_”,4-20个字符</span>
+					</div>
+					<div class="upwd">
+						<label for="upwd">密码：<i></i></label>
+						<input id="upwd" name="upwd" type="password" maxlength="20"/>
+						<span>支持字母、数字和“_”,6-20个字符</span>
+						<div class="intensity">
+							<ul>
+								<li></li>
+								<li></li>
+								<li></li>
+							</ul>
+						</div>
+					</div>
+					<div class="upwd1">
+						<label for="upwd1">确认密码：<i></i></label>
+						<input id="upwd1" type="password" maxlength="20"/>
+						<span>请再次输入一遍密码</span>
+					</div>
+					<div class="phone">
+						<label for="phone">手机：<i></i></label>
+						<input id="phone" name="phone" type="tel" maxlength="11"/>
+						<span>请输入联系电话</span>
+					</div>
+					<div class="test">
+						<label for="test">验证码：<i></i></label>
+						<input spellcheck="false" id="test" type="text"/>
+						<b class=""></b>
+						<div>
+							<canvas id="c1" width="100" height="40"></canvas>
+							<a class="test" href="">看不清，换一张</a>
+						</div>
+					</div>
+					<div class="sel">
+						<input type="checkbox"/><span>同意用户协议和版权声明</span>
+					</div>
+					<div class="btn">
+						<button type="button">注册</button>
+						<a href="index.html">返回首页</a>
+					</div>
+				</form>
+			</div>
+			<div id="bg">
+				<div class="bgmain">
+					<video autoplay loop muted src="res/bg2.mp4" width="1210"></video>
+				</div>
+			</div>
+
+		</div>
+		<!--底部-->
+		<footer	id="foot">
+			<p><a href="#">关于我</a>|<a href="#">联系我</a>|<a href="#">商家入驻</a>|<a href="#">友情链接</a></p>
+			<p>互联网出版许可证编号新出网证(京)字000号|出版物经营许可证|网络文化经营许可证京网文[2018]0000-000号|违法和不良信息举报电话：123456789</p>
+			<p>Copyright © 2018  我的电影网 版权所有|消费者维权热线：12345</p>
+		</footer>
+		<script src="js/vue.js"></script>
+	<script src="js/jquery-1.11.3.js"></script>
+	<script src="js/register.js"></script>
+	</body>
+</html>
